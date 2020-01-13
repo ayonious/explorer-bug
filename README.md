@@ -4,9 +4,13 @@
 
 Simple React app to explore the 2d interface with a bug
 
+<p align="center">
+  <img height="342px" width="300px" alt="Screenshot" src="https://cdn.jsdelivr.net/gh/ayonious/random-names@master/documentation/explorerdemo.gif">
+</p>
+
 # See Deployed
 
-https://explorerbug.netlify.com/
+https://exploringbug.netlify.com/
 
 # Local Running instruction
 

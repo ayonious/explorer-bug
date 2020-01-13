@@ -24,8 +24,8 @@ interface State {
   gridState: number[][];
 }
 
-const randomTossProbabilibty10 = () => {
-  return Math.floor(Math.random() * 100 + 1) < 10 ? 1 : 0;
+const randomTossProbabilibty15 = () => {
+  return Math.floor(Math.random() * 100 + 1) < 15 ? 1 : 0;
 };
 
 // generate a grid, if 1 then there is a food otherwise no food
@@ -34,7 +34,7 @@ const genFoodLocation = (rowNums: number, colNums: number) => {
   for (let i = 0; i < rowNums; i++) {
     const rowArr: number[] = [];
     for (let j = 0; j < colNums; j++) {
-      rowArr.push(randomTossProbabilibty10());
+      rowArr.push(randomTossProbabilibty15());
     }
     ret.push(rowArr);
   }

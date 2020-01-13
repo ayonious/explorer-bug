@@ -20,8 +20,8 @@ export const robotPosToFlightStyle = (robotState: RobotState) => {
   };
 };
 
-export const ROW_LIMIT = 10;
-export const COL_LIMIT = 10;
+export const ROW_LIMIT = 7;
+export const COL_LIMIT = 7;
 
 export const moveForward = (currentState: RobotState) => {
   const nextCol = currentState.col + directionsC[currentState.direction];

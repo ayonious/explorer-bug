@@ -5,7 +5,7 @@
 Simple React app to explore the 2d interface with a bug
 
 <p align="center">
-  <img height="auto" width="300px" alt="Screenshot" src="https://cdn.jsdelivr.net/gh/ayonious/explorer-bug@master/documentation/bugdemo.gif">
+  <img height="auto" width="350px" alt="Screenshot" src="https://cdn.jsdelivr.net/gh/ayonious/explorer-bug@master/documentation/bugdemo.gif">
 </p>
 
 # See Deployed

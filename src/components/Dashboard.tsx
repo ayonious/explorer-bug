@@ -1,19 +1,19 @@
 import * as React from 'react';
 
 import {
+  COL_LIMIT,
+  getnewGrid,
+  getnewScore,
   moveForward,
   RobotState,
+  ROW_LIMIT,
   turnLeft,
   turnRight,
-  getnewScore,
-  getnewGrid,
-  ROW_LIMIT,
-  COL_LIMIT,
 } from '../helpers/DirectionManager';
 import { MainDashboard } from '../styledcomponents/styles';
 import BoardReults from './BoardResults';
 import JoyPad from './JoyPad';
-import { Greeting } from './Utils';
+import { Greeting, ScoreCard } from './Utils';
 
 interface Props {}
 
@@ -91,6 +91,7 @@ export default class Dashboard extends React.Component<Props, State> {
       <MainDashboard>
         <div>
           <Greeting />
+          <ScoreCard score={this.state.score} />
         </div>
 
         <JoyPad

@@ -1,13 +1,14 @@
 import BugReportTwoToneIcon from '@material-ui/icons/BugReportTwoTone';
 import EcoIcon from '@material-ui/icons/Eco';
 import * as React from 'react';
-import { Row, Cell, Grid } from '../styledcomponents/styles';
+
 import {
   COL_LIMIT,
   robotPosToFlightStyle,
   RobotState,
   ROW_LIMIT,
 } from '../helpers/DirectionManager';
+import { Cell, Grid, Row } from '../styledcomponents/styles';
 
 interface Props {
   robotState: RobotState;

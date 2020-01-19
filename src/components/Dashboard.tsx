@@ -86,7 +86,6 @@ export default class Dashboard extends React.Component<Props, State> {
   }
 
   render() {
-    console.log('grid', this.state.gridState);
     return (
       <MainDashboard>
         <div>

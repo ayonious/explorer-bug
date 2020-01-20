@@ -11,7 +11,7 @@ import {
   turnRight,
 } from '../helpers/DirectionManager';
 import { MainDashboard } from '../styledcomponents/styles';
-import BoardReults from './BoardResults';
+import BoardResults from './BoardResults';
 import JoyPad from './JoyPad';
 import { Greeting, ScoreCard } from './Utils';
 
@@ -104,7 +104,7 @@ export default class Dashboard extends React.Component<Props, State> {
           <br />{' '}
         </div>
 
-        <BoardReults
+        <BoardResults
           robotState={this.state.robotState}
           gridState={this.state.gridState}
         />

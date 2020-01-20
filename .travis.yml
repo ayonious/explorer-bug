@@ -1,6 +1,9 @@
 language: node_js
 node_js:
-  - stable
-  - '--lts'
+- stable
+- "--lts"
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -e TRAVIS_NODE_VERSION
+- bash <(curl -s https://codecov.io/bash) -e TRAVIS_NODE_VERSION
+env:
+  global:
+    secure: 00qrozmA73DRj7E3JRkXIMHksfkE00N3GV0DUxo+ngAxysYcKeJtP/OKoobuy7NHNdoE3Q1VuKXlCY6xFhwJlpafpDDB9anl6gXTlmlN6+P+9dY3dPCai1TmLMOeAOmK+7d/Kpl1tjomu1ibgHsMSY9QE/Se5ubDsVrSHlNKg6/lP23A4v3XYxsCCTF3Ys0ufaP7rnFKeyOaDAwGAw3Kd4C3Zr73z2pGyn8svUOk0BeNNKUBYoHh3iVZfuvVGxrPTDQzldUGAuAzy/qycBUCIYeUsrH+dZWxRnR4Pn+9R846psivQ8ixE1hGLq2VYYrZZj/KCG8BzJSbFMJBq/UD47eJ7pAnb8de6UYu9cM/OiZqvv2/gj6pgk3QlxmRYKfhEqbLgl/3lbXl49b4jJUnU78bHWEMUE74CKOQOmcGG3Xhi1J+5UQ4WWJ58e0f1m3aGoV12OhCcXk7eoKan/dl1+frzRJWNnm/C7q1cIuwzETL9wd93dyn2/gZAgaa6gLiveQ5856h06DmRcMCe90EaBx0jehixc0DSMsNwvMkTvqI+g/5hW0ggIEMd4iJ5dStMFBUOtiF7Ow3yrRoTw/DOavEI52tjyUGPLW+1Kzvdi3F8pTOgJZX18rRDnVih9eJNZLEDOcxK5zefD5Ogsd4KMGQMpRUdoAHvxtGHiuh24o=

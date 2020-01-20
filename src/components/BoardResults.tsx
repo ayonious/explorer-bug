@@ -90,7 +90,7 @@ const CreateRows = (props: {
   return <div>{rowList}</div>;
 };
 
-export default class BoardReults extends React.Component<Props, State> {
+export default class BoardResults extends React.Component<Props, State> {
   render() {
     return (
       <Grid>

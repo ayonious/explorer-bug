@@ -1,6 +1,6 @@
 {
   "name": "game-loader",
-  "version": "0.0.45",
+  "version": "0.0.46",
   "description": "Load the game and play",
   "keywords": [],
   "engines": {
@@ -39,7 +39,7 @@
     "@types/styled-components": "^4.4.2",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
-    "enzyme-to-json": "^3.4.3",
+    "enzyme-to-json": "^3.4.4",
     "husky": "^4.2.1",
     "jest": "^24.9.0",
     "percy": "^0.20.12",

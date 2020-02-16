@@ -1,6 +1,6 @@
 {
   "name": "game-loader",
-  "version": "0.0.49",
+  "version": "0.0.50",
   "description": "Load the game and play",
   "keywords": [],
   "engines": {
@@ -30,7 +30,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@types/enzyme": "^3.10.4",
+    "@types/enzyme": "^3.10.5",
     "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/jest": "^25.1.1",
     "@types/react": "^16.9.19",

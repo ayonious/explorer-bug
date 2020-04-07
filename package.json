@@ -1,6 +1,6 @@
 {
   "name": "game-loader",
-  "version": "0.0.100",
+  "version": "0.0.101",
   "description": "Load the game and play",
   "keywords": [],
   "engines": {
@@ -13,7 +13,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-scripts": "3.4.1",
-    "styled-components": "^5.0.1",
+    "styled-components": "^5.1.0",
     "typescript": "3.8.3"
   },
   "scripts": {

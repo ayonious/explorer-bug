@@ -1,6 +1,6 @@
 {
   "name": "game-loader",
-  "version": "0.0.101",
+  "version": "0.0.102",
   "description": "Load the game and play",
   "keywords": [],
   "engines": {
@@ -43,7 +43,7 @@
     "husky": "^4.2.3",
     "jest": "^24.9.0",
     "percy": "^0.26.2",
-    "prettier": "^2.0.3",
+    "prettier": "^2.0.4",
     "pretty-quick": "^2.0.1",
     "react-test-renderer": "^16.13.1",
     "ts-jest": "^25.3.1"

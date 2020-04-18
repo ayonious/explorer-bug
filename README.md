@@ -12,7 +12,7 @@ Simple React app to explore the 2d interface with a bug
 
 # See Deployed
 
-https://exploringbug.netlify.com/
+https://exploringbug.netlify.app
 
 # Local Running instruction
 

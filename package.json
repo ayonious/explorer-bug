@@ -1,20 +1,19 @@
 {
-  "name": "game-loader",
-  "version": "0.0.111",
+  "name": "explorer-bug",
+  "version": "1.0.0",
   "description": "Load the game and play",
   "keywords": [],
   "engines": {
     "node": "11.15.0"
   },
   "dependencies": {
-    "@material-ui/core": "4.9.13",
+    "@material-ui/core": "4.9.14",
     "@material-ui/icons": "4.9.1",
     "axios": "^0.19.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-scripts": "3.4.1",
-    "styled-components": "^5.1.0",
-    "typescript": "3.8.3"
+    "styled-components": "^5.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -32,9 +31,9 @@
   "devDependencies": {
     "@types/enzyme": "^3.10.5",
     "@types/enzyme-adapter-react-16": "^1.0.6",
-    "@types/jest": "^25.2.1",
-    "@types/react": "^16.9.34",
-    "@types/react-dom": "16.9.7",
+    "@types/jest": "^25.2.2",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "16.9.8",
     "@types/react-test-renderer": "^16.9.2",
     "@types/styled-components": "^5.1.0",
     "enzyme": "^3.11.0",
@@ -42,10 +41,10 @@
     "enzyme-to-json": "^3.4.4",
     "husky": "^4.2.5",
     "jest": "^24.9.0",
-    "percy": "^0.26.2",
     "prettier": "^2.0.5",
+    "typescript": "3.9.2",
     "pretty-quick": "^2.0.1",
     "react-test-renderer": "^16.13.1",
-    "ts-jest": "^25.5.1"
+    "ts-jest": "^26.0.0"
   }
 }

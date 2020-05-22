@@ -62,6 +62,7 @@ const CreateRow = (props: {
     .fill(0)
     .map((e, colId) => (
       <CreateCell
+        key={`colId:${colId}-rowId:${rowId}`}
         robotState={robotState}
         cellState={rowGrid[colId]}
         rowId={rowId}

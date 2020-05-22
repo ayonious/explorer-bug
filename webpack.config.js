@@ -2,7 +2,6 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.tsx',
-  output: {},
   module: {
     rules: [
       {

@@ -20,3 +20,11 @@ https://exploringbug.netlify.app
 npm install
 npm run start
 ```
+
+## 🎓 Things that I learnt in this project
+
+1. Ts
+2. Test with Enzyme
+3. Webpack and babbel
+4. Styled Components
+5. Netlify Deployment

@@ -2,96 +2,68 @@
 
 exports[`JoyPad renders 1`] = `
 <div>
-  <div
-    className="sc-AxiKw dLpRBE"
-  >
+  <div>
     <div
-      className="sc-AxjAm dqaaBL"
+      class="sc-AxiKw dLpRBE"
     >
-      <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={0}
-        type="button"
+      <div
+        class="sc-AxjAm dqaaBL"
       >
-        <span
-          className="MuiButton-label"
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+          tabindex="0"
+          type="button"
         >
-          Go
-        </span>
-      </button>
-    </div>
-  </div>
-  <div
-    className="sc-AxiKw dLpRBE"
-  >
-    <div
-      className="sc-AxjAm dqaaBL"
-    >
-      <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={0}
-        type="button"
-      >
-        <span
-          className="MuiButton-label"
-        >
-          Left
-        </span>
-      </button>
+          <span
+            class="MuiButton-label"
+          >
+            Go
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
     </div>
     <div
-      className="sc-AxjAm dqaaBL"
+      class="sc-AxiKw dLpRBE"
     >
-      <button
-        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onDragLeave={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        onMouseDown={[Function]}
-        onMouseLeave={[Function]}
-        onMouseUp={[Function]}
-        onTouchEnd={[Function]}
-        onTouchMove={[Function]}
-        onTouchStart={[Function]}
-        tabIndex={0}
-        type="button"
+      <div
+        class="sc-AxjAm dqaaBL"
       >
-        <span
-          className="MuiButton-label"
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+          tabindex="0"
+          type="button"
         >
-          Right
-        </span>
-      </button>
+          <span
+            class="MuiButton-label"
+          >
+            Left
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+      <div
+        class="sc-AxjAm dqaaBL"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            Right
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
     </div>
   </div>
 </div>

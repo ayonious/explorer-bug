@@ -1,12 +1,11 @@
 import * as React from 'react';
-import * as renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
+import { render, getNodeText } from '@testing-library/react';
 
 import Dashboard from '../src/components/Dashboard';
 
 it('Dashboard renders', () => {
-  const component = shallow(<Dashboard />);
-  expect(component.exists('Greeting')).toEqual(true);
-  expect(component.exists('JoyPad')).toEqual(true);
-  expect(component.exists('BoardResults')).toEqual(true);
+  const { container } = render(<Dashboard />);
+  expect(getNodeText(container.querySelector('h1') as HTMLElement)).toBe(
+    ' Move the bug to eat all food! '
+  );
 });

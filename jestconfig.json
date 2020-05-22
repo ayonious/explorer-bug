@@ -1,6 +1,4 @@
 {
   "collectCoverage": true,
-  "preset": "ts-jest",
-  "snapshotSerializers": ["enzyme-to-json/serializer"],
-  "setupFiles": ["./test/setupTests.tsx"]
+  "preset": "ts-jest"
 }

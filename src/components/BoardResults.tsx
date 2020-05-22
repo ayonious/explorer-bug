@@ -81,6 +81,7 @@ const CreateRows = (props: {
     .fill(0)
     .map((e, rowId) => (
       <CreateRow
+        key={`rowId-${rowId}`}
         robotState={robotState}
         rowGrid={gridState[rowId]}
         rowId={rowId}

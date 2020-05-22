@@ -1,11 +1,11 @@
 import * as React from 'react';
-import * as renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import JoyPad from '../src/components/JoyPad';
 
 it('JoyPad renders', () => {
   const func = () => {};
-  const tree = renderer.create(
+  const { container } = render(
     <JoyPad handleGo={func} handleLeft={func} handleRight={func} />
   );
-  expect(tree).toMatchSnapshot();
+  expect(container).toMatchSnapshot();
 });

@@ -17,9 +17,9 @@
   "scripts": {
     "cypress-headless": "cypress run --browser chrome --headless",
     "cypress-web": "cypress open",
-    "start-dont-open-browser": "webpack-dev-server --mode development",
     "start": "webpack-dev-server --open --mode development",
-    "test-integration": "start-server-and-test start-dont-open-browser http://localhost:8080 cypress-headless",
+    "start-headless": "webpack-dev-server --mode development",
+    "test-integration": "start-server-and-test start-headless http://localhost:8080 cypress-headless",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "build": "webpack --mode production",
     "test": "jest --config jestconfig.json"
@@ -52,6 +52,7 @@
     "pretty-quick": "^2.0.1",
     "react-test-renderer": "^16.13.1",
     "source-map-loader": "^0.2.4",
+    "start-server-and-test": "^1.11.0",
     "ts-jest": "^26.0.0",
     "typescript": "^3.9.3",
     "webpack": "^4.43.0",

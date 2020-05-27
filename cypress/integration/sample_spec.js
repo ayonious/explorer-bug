@@ -3,11 +3,14 @@ describe('Integration Tests', () => {
     cy.visit('http://localhost:8080');
   });
 
-  it('initial page should have => 1.buttons, 2.Bug 3.Header Text', () => {
+  it('initial page should have => 1.buttons, 2.Header Text', () => {
+    // Buttons
     cy.contains('Left');
     cy.contains('Right');
     cy.contains('Go');
 
-    cy.contain('Move the bug to eat all food!');
+    // Header text
+    cy.contains('Move the bug to eat all food!');
+    cy.contains('Score:');
   });
 });

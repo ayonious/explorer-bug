@@ -10,13 +10,6 @@ import {
 } from '../../helpers/DirectionManager';
 import { Cell, Grid, Row } from './styles';
 
-interface Props {
-  robotState: RobotState;
-  gridState: number[][];
-}
-
-interface State {}
-
 const inputToPlayerIcon = (
   robotState: RobotState,
   cellState: number,
@@ -91,17 +84,21 @@ const CreateRows = (props: {
     ));
   return <div>{rowList}</div>;
 };
-
-export default class BoardResults extends React.Component<Props, State> {
-  render() {
-    return (
-      <Grid>
-        <CreateRows
-          robotState={this.props.robotState}
-          gridState={this.props.gridState}
-          rowCount={ROW_LIMIT}
-        />
-      </Grid>
-    );
-  }
+interface Props {
+  robotState: RobotState;
+  gridState: number[][];
 }
+
+const BoardResults = (props: Props) => {
+  return (
+    <Grid>
+      <CreateRows
+        robotState={props.robotState}
+        gridState={props.gridState}
+        rowCount={ROW_LIMIT}
+      />
+    </Grid>
+  );
+};
+
+export default BoardResults;

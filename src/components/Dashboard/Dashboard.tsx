@@ -9,11 +9,12 @@ import {
   ROW_LIMIT,
   turnLeft,
   turnRight,
-} from '../helpers/DirectionManager';
-import { MainDashboard } from '../styledcomponents/styles';
-import BoardResults from './BoardResults';
-import JoyPad from './JoyPad';
-import { Greeting, ScoreCard } from './Utils';
+} from '../../helpers/DirectionManager';
+import { MainDashboard } from './styles';
+import BoardResults from '../BoardResults/BoardResults';
+import JoyPad from '../JoyPad/JoyPad';
+import ScoreCard from '../ScoreCard/ScoreCard';
+import Greeting from '../Greeting/Greeting';
 
 interface Props {}
 

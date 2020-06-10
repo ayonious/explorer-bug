@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { render, getNodeText } from '@testing-library/react';
 
-import Dashboard from '../src/components/Dashboard';
+import Dashboard from '../src/components/Dashboard/Dashboard';
 
 it('Dashboard renders', () => {
   const { container } = render(<Dashboard />);

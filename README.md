@@ -17,8 +17,8 @@ https://exploringbug.netlify.app
 # 🏃‍♂️ Local Running instruction
 
 ```
-npm install
-npm run start
+yarn
+yarn run start
 ```
 
 ## 🎓 Things that I learnt in this project

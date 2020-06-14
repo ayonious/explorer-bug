@@ -11,7 +11,7 @@ import {
   turnRight,
 } from '../../helpers/DirectionManager';
 import { MainDashboard } from './styles';
-import BoardResults from '../BoardResults/BoardResults';
+import BoardResults from '../BoardResults';
 import JoyPad from '../JoyPad/JoyPad';
 import ScoreCard from '../ScoreCard/ScoreCard';
 import Greeting from '../Greeting/Greeting';
@@ -30,16 +30,10 @@ const randomTossProbabilibty15 = () => {
 };
 
 // generate a grid, if 1 then there is a food otherwise no food
-const genFoodLocation = (rowNums: number, colNums: number) => {
-  const ret: number[][] = [];
-  for (let i = 0; i < rowNums; i++) {
-    const rowArr: number[] = [];
-    for (let j = 0; j < colNums; j++) {
-      rowArr.push(randomTossProbabilibty15());
-    }
-    ret.push(rowArr);
-  }
-  return ret;
+const genFoodLocation = (rowNums: number, colNums: number): number[][] => {
+  return [...Array(rowNums)].map(() => {
+    return [...Array(colNums)].map(() => randomTossProbabilibty15());
+  });
 };
 
 export default class Dashboard extends React.Component<Props, State> {

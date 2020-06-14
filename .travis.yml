@@ -8,6 +8,8 @@ after_success:
   - bash <(curl -s https://codecov.io/bash) -e TRAVIS_NODE_VERSION
 # This block is only used because we are using yarn
 cache:
-  yarn: true
+  # cache both npm modules and Cypress binary
   directories:
+    - ~/.npm
+    - ~/.cache
     - cypress

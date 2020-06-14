@@ -12,9 +12,9 @@ import {
 } from '../../helpers/DirectionManager';
 import { MainDashboard } from './styles';
 import BoardResults from '../BoardResults';
-import JoyPad from '../JoyPad/JoyPad';
-import ScoreCard from '../ScoreCard/ScoreCard';
-import Greeting from '../Greeting/Greeting';
+import JoyPad from '../JoyPad';
+import ScoreCard from '../ScoreCard';
+import Greeting from '../Greeting';
 
 interface Props {}
 

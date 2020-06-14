@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { render } from '@testing-library/react';
-import CustomButton from '../src/components/CustomButton/CustomButton';
-import ScoreCard from '../src/components/ScoreCard/ScoreCard';
-import Greeting from '../src/components/Greeting/Greeting';
+import CustomButton from '../src/components/CustomButton';
+import ScoreCard from '../src/components/ScoreCard';
+import Greeting from '../src/components/Greeting';
 
 it('ScoreCard renders', () => {
   const tree = render(<ScoreCard score={10} />);

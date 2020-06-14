@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { Row } from './styles';
-import CustomButton from '../CustomButton/CustomButton';
+import CustomButton from '../CustomButton';
 
 interface Props {
   handleLeft: any;

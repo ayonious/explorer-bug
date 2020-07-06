@@ -1,6 +1,6 @@
 {
   "name": "explorer-bug",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Bug Game",
   "keywords": [
     "react",
@@ -36,7 +36,7 @@
     "@babel/preset-react": "^7.10.1",
     "@babel/preset-typescript": "^7.10.1",
     "@testing-library/react": "^10.2.1",
-    "@types/jest": "^26.0.0",
+    "@types/jest": "^26.0.3",
     "@types/react": "^16.9.36",
     "@types/react-dom": "16.9.8",
     "@types/react-test-renderer": "^16.9.2",

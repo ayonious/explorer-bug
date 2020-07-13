@@ -1,5 +1,7 @@
-import * as React from 'react';
 import { render } from '@testing-library/react';
+import expect from 'expect';
+import React from 'react';
+
 import JoyPad from '../src/components/JoyPad';
 
 it('JoyPad renders', () => {

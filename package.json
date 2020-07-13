@@ -1,6 +1,6 @@
 {
   "name": "explorer-bug",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "Bug Game",
   "keywords": [
     "react",
@@ -52,7 +52,7 @@
     "pretty-quick": "^2.0.1",
     "react-test-renderer": "^16.13.1",
     "source-map-loader": "^1.0.1",
-    "start-server-and-test": "^1.11.0",
+    "start-server-and-test": "^1.11.2",
     "ts-jest": "^26.1.0",
     "typescript": "^3.9.6",
     "webpack": "^4.43.0",

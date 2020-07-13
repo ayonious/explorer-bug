@@ -1,6 +1,6 @@
 import BugReportTwoToneIcon from '@material-ui/icons/BugReportTwoTone';
 import EcoIcon from '@material-ui/icons/Eco';
-import * as React from 'react';
+import React from 'react';
 
 import {
   COL_LIMIT,

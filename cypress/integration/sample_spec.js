@@ -11,6 +11,6 @@ describe('Integration Tests', () => {
 
     // Header text
     cy.contains('Move the bug to eat all food!');
-    cy.contains('Score:');
+    cy.contains('Scores:');
   });
 });

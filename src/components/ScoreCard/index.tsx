@@ -5,7 +5,7 @@ import { CustomDiv } from './styles';
 const ScoreCard = ({ score }: { score: number }) => {
   return (
     <CustomDiv>
-      <h1> Score: {score} </h1>
+      <h1> Scores: {score} </h1>
     </CustomDiv>
   );
 };

@@ -1,6 +1,6 @@
 {
   "name": "explorer-bug",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "description": "Bug Game",
   "keywords": [
     "react",
@@ -43,7 +43,7 @@
     "@types/styled-components": "^5.1.1",
     "@types/webpack-env": "^1.15.2",
     "babel-loader": "^8.1.0",
-    "cypress": "^4.10.0",
+    "cypress": "^4.11.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "husky": "^4.2.5",

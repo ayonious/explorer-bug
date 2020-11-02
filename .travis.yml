@@ -1,7 +1,6 @@
 language: node_js
 node_js:
   - stable
-  - '--lts'
 addons:
   apt:
     packages:
@@ -15,7 +14,6 @@ cache:
 
 # Build stages
 stages:
-  - install
   - test
   - send codecov report
   - build
@@ -25,8 +23,6 @@ stages:
 # Build stages
 jobs:
   include:
-    - stage: install
-      script: yarn
     - stage: build
       script: yarn build
     - stage: test

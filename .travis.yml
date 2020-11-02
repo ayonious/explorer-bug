@@ -15,7 +15,7 @@ cache:
 # Build stages
 stages:
   - test
-  - send codecov report
+  - codecov
   - build
   - name: deploy
     if: branch = master

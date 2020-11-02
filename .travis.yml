@@ -28,8 +28,8 @@ jobs:
       script: yarn build
     - stage: test
       # Parallel test stages
-      script: yarn unit-test
-      script: yarn test-integration
+      - script: yarn unit-test
+      - script: yarn test-integration
     - stage: send codecov report
       script: bash <(curl -s https://codecov.io/bash) -e TRAVIS_NODE_VERSION
     - stage: deploy

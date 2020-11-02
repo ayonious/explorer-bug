@@ -15,15 +15,18 @@ cache:
 
 # Build stages
 stages:
-  - build
+  - install
   - test
   - send codecov report
+  - build
   - name: deploy
     if: branch = master
 
 # Build stages
 jobs:
   include:
+    - stage: install
+      script: yarn
     - stage: build
       script: yarn build
     - stage: test

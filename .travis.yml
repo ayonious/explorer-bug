@@ -24,16 +24,21 @@ stages:
 jobs:
   include:
     - stage: build
+      name: 'Make Production Build'
       script: yarn build
     - stage: test
+      name: 'Unit Tests'
       # Parallel test stages same name but different script
       script: yarn unit-test
     - stage: test
+      name: 'Integration Tests'
       # Parallel test stages
       script: yarn test-integration
-    - stage: send codecov report
+    - stage: codecov
+      name: 'Send Codecov Report'
       script: bash <(curl -s https://codecov.io/bash) -e TRAVIS_NODE_VERSION
     - stage: deploy
+      name: 'Deploy'
       deploy:
         provider: netlify
         site: c7820f18-d7e2-4b89-aaf6-e8163fd9811f

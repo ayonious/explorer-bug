@@ -1,7 +1,9 @@
 language: node_js
+
 node_js:
   - stable
   - '--lts'
+
 addons:
   apt:
     packages:
@@ -18,8 +20,6 @@ stages:
   - test
   - codecov
   - build
-  - name: deploy
-    if: branch = master
 
 # Build stages
 jobs:
@@ -28,13 +28,22 @@ jobs:
       name: 'Make Production Build'
       script: yarn build
     - stage: test
-      name: 'Unit Tests'
-      # Parallel test stages same name but different script
+      name: 'Unit Tests on node_js:stable'
       script: yarn unit-test
+      node_js: stable
     - stage: test
-      name: 'Integration Tests'
-      # Parallel test stages
+      name: 'Unit Tests on lts node_js:lts'
+      script: yarn unit-test
+      node_js: '--lts'
+    - stage: test
+      name: 'Integration Tests on nodejs:stable'
       script: yarn test-integration
+      node_js: '--lts'
+    - stage: test
+      name: 'Integration Tests on nodejs:lts'
+      script: yarn test-integration
+      node_js: stable
     - stage: codecov
       name: 'Send Codecov Report'
       script: bash <(curl -s https://codecov.io/bash) -e TRAVIS_NODE_VERSION
+      node_js: stable

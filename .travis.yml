@@ -25,8 +25,10 @@ jobs:
       node_js: stable
       script: yarn build
     - stage: test
-      name: 'Unit Tests on node_js:stable'
-      script: yarn unit-test
+      name: 'Unit Tests on node_js:stable and codecov report'
+      script: 
+        - yarn unit-test
+        - bash <(curl -s https://codecov.io/bash) -e TRAVIS_NODE_VERSION
       node_js: stable
     - stage: test
       name: 'Unit Tests on lts node_js:lts'
@@ -39,8 +41,4 @@ jobs:
     - stage: test
       name: 'Integration Tests on nodejs:lts'
       script: yarn test-integration
-      node_js: stable
-    - stage: codecov
-      name: 'Send Codecov Report'
-      script: bash <(curl -s https://codecov.io/bash) -e TRAVIS_NODE_VERSION
       node_js: stable

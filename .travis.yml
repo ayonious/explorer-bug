@@ -1,7 +1,5 @@
 language: node_js
-node_js:
-  - stable
-  - '--lts'
+
 addons:
   apt:
     packages:
@@ -12,15 +10,34 @@ cache:
     - '~/.npm'
     - '~/.cache'
     - node_modules
-script:
-  - yarn build
-  - yarn unit-test
-  - yarn test-integration
-after_success:
-  - bash <(curl -s https://codecov.io/bash) -e TRAVIS_NODE_VERSION
-deploy:
-  provider: netlify
-  site: c7820f18-d7e2-4b89-aaf6-e8163fd9811f
-  auth:
-    secure: v1lH0+7Z/cBkDjlfkec13Ay4J8YN51mWZqS7o44JW0pg+qNb0MsOX8Q+lw0/ASn+fZ9N2HY5DxmLEt70qd37ryBv3bOmSacrnAKXkgxewfCOeKUwNKeQwMKRLAa1vyPHkAxToF5tqsGynB2MTVqEasepjKpnkhxFYiZA4WB0kFZP8syDyu8rmrBRR+0VlnVN+yvXmDUu0OVHYAramUk10ziZJF/ceoxPn+SiEbE1EJiMGHrZEiXhSN4vcg7b9ISQnyobfeeTasg/8OBppPcKeOJPcRmKaVySU78a2E1U5YghYwQd5O4/KfUTUUzz8J482CwraNKKVBSCiwm865FL3/aMoUqxesSGXVzFIoCLLxNQpi9kGVE5ZnD7E8Bm8IOzvbM/b/Vn87IZQF5G7fxYjqJq5omtM+NTQOQfwy4a5WH0LpI+3DoMQpqA8zlihABoOrCqgEZ9IjcidnzXXFcatNiC4+r9eN/K3yGTmRZunKzQyqzJE+jocdMiMVdJYv9BZQ3xFW6P36+3kXZoeQkSeSXBwoHIZTA0KvZZ15HC82YNImXa/DSnQVQwaBbGk6Do4USKGJFo4Ur+VnddJXfvlss8bTEq082orUyWW/Fn+WUWptqMVlBLcNEEYrUFrP7LpF3HYMfIv7ubpC1dcOpKzq3Rh7ubu/1P0g1NCq+Mnws=
-  edge: true
+
+# Build stages
+stages:
+  - test
+  - build
+
+# Build stages
+jobs:
+  include:
+    - stage: build
+      name: 'Make Production Build'
+      node_js: stable
+      script: yarn build
+    - stage: test
+      name: 'Unit Tests on node_js:stable and codecov report'
+      script: 
+        - yarn unit-test
+        - bash <(curl -s https://codecov.io/bash) -e TRAVIS_NODE_VERSION
+      node_js: stable
+    - stage: test
+      name: 'Unit Tests on lts node_js:lts'
+      script: yarn unit-test
+      node_js: '--lts'
+    - stage: test
+      name: 'Integration Tests on nodejs:stable'
+      script: yarn test-integration
+      node_js: '--lts'
+    - stage: test
+      name: 'Integration Tests on nodejs:lts'
+      script: yarn test-integration
+      node_js: stable

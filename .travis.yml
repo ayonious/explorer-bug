@@ -1,9 +1,5 @@
 language: node_js
 
-node_js:
-  - stable
-  - '--lts'
-
 addons:
   apt:
     packages:
@@ -26,6 +22,7 @@ jobs:
   include:
     - stage: build
       name: 'Make Production Build'
+      node_js: stable
       script: yarn build
     - stage: test
       name: 'Unit Tests on node_js:stable'

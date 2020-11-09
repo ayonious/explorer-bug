@@ -1,6 +1,6 @@
 {
   "name": "explorer-bug",
-  "version": "1.0.83",
+  "version": "1.0.84",
   "description": "Bug Game",
   "keywords": [
     "react",
@@ -33,7 +33,7 @@
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
-    "@babel/preset-react": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
     "@babel/preset-typescript": "^7.12.1",
     "@testing-library/react": "^11.1.0",
     "@types/jest": "^26.0.15",

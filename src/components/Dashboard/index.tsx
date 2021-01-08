@@ -1,20 +1,22 @@
 import * as React from 'react';
+import GithubCorner from 'react-github-corner';
 
 import {
   COL_LIMIT,
-  getnewGrid,
-  getnewScore,
+  getNewGrid,
+  getNewScore,
   moveForward,
   RobotState,
   ROW_LIMIT,
   turnLeft,
   turnRight,
 } from '../../helpers/DirectionManager';
-import { MainDashboard } from './styles';
 import BoardResults from '../BoardResults';
+import Greeting from '../Greeting';
 import JoyPad from '../JoyPad';
 import ScoreCard from '../ScoreCard';
-import Greeting from '../Greeting';
+import { MainDashboard } from './styles';
+import GithubCornerPart from './GitCorner';
 
 interface Props {}
 
@@ -63,8 +65,8 @@ export default class Dashboard extends React.Component<Props, State> {
     const newLocation: RobotState = moveForward(this.state.robotState);
     this.setState({
       robotState: newLocation,
-      score: getnewScore(newLocation, this.state.score, this.state.gridState),
-      gridState: getnewGrid(newLocation, this.state.gridState),
+      score: getNewScore(newLocation, this.state.score, this.state.gridState),
+      gridState: getNewGrid(newLocation, this.state.gridState),
     });
   }
 
@@ -83,6 +85,7 @@ export default class Dashboard extends React.Component<Props, State> {
   render() {
     return (
       <MainDashboard>
+        <GithubCornerPart />
         <div>
           <Greeting />
           <ScoreCard score={this.state.score} />

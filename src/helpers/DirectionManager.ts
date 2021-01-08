@@ -39,7 +39,7 @@ export const moveForward = (currentState: RobotState) => {
   return currentState;
 };
 
-export const getnewScore = (
+export const getNewScore = (
   currentState: RobotState,
   currentScore: number,
   gridState: number[][]
@@ -50,7 +50,7 @@ export const getnewScore = (
   return currentScore;
 };
 
-export const getnewGrid = (currentState: RobotState, gridState: number[][]) => {
+export const getNewGrid = (currentState: RobotState, gridState: number[][]) => {
   gridState[currentState.row][currentState.col] = 0;
   return gridState;
 };

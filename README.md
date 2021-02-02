@@ -28,7 +28,7 @@ yarn run start
 3. Webpack and babbel
 4. Styled Components
 5. Netlify Deployment
-6. Integration testing with cypress
+6. Integration testing with cypress 
 
 ## 🚀 Deploy Yourself
 

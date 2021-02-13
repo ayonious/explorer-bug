@@ -10,7 +10,7 @@ Simple React app to explore the 2d interface with a bug
   <img height="auto" width="350px" alt="Screenshot" src="https://cdn.jsdelivr.net/gh/ayonious/explorer-bug@master/documentation/bugdemo.gif">
 </p>
 
-## 🎁 See Deployed
+## 🎁 Checkout the website
 
 https://exploringbug.netlify.app
 

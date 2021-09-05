@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-bdnxRM erqcUV"
+        class="sc-bdfBQB hfBKWy"
       >
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
@@ -27,7 +27,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-bdnxRM erqcUV"
+      class="sc-bdfBQB hfBKWy"
     >
       <button
         class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
@@ -105,7 +105,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-dlnjwi gBUJWZ"
+        class="sc-dlfnuX dTSMqD"
       >
         <h1>
            Move the bug to eat all food! 
@@ -115,7 +115,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-dlnjwi gBUJWZ"
+      class="sc-dlfnuX dTSMqD"
     >
       <h1>
          Move the bug to eat all food! 
@@ -182,7 +182,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-gtsrHT kHutLR"
+        class="sc-gsTEea bnJPMP"
       >
         <h1>
            Scores: 
@@ -194,7 +194,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-gtsrHT kHutLR"
+      class="sc-gsTEea bnJPMP"
     >
       <h1>
          Scores: 

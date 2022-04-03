@@ -4,10 +4,10 @@ exports[`JoyPad renders 1`] = `
 <div>
   <div>
     <div
-      class="sc-bdvvtL eoaGfP"
+      class="sc-bczRLJ fBlBWk"
     >
       <div
-        class="sc-gsDKAQ cfyTNe"
+        class="sc-gsnTZi liuEFe"
       >
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
@@ -26,10 +26,10 @@ exports[`JoyPad renders 1`] = `
       </div>
     </div>
     <div
-      class="sc-bdvvtL eoaGfP"
+      class="sc-bczRLJ fBlBWk"
     >
       <div
-        class="sc-gsDKAQ cfyTNe"
+        class="sc-gsnTZi liuEFe"
       >
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
@@ -47,7 +47,7 @@ exports[`JoyPad renders 1`] = `
         </button>
       </div>
       <div
-        class="sc-gsDKAQ cfyTNe"
+        class="sc-gsnTZi liuEFe"
       >
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"

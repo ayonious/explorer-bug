@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CustomButton renders 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-bczRLJ gVHrnU"
+        class="sc-bcXHqe eGvJIZ"
       >
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
@@ -27,7 +27,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-bczRLJ gVHrnU"
+      class="sc-bcXHqe eGvJIZ"
     >
       <button
         class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
@@ -100,12 +100,12 @@ Object {
 `;
 
 exports[`Greeting renders 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-dkzDqf gcKDBg"
+        class="sc-dkrFOg iRdyJO"
       >
         <h1>
            Move the bug to eat all food! 
@@ -115,7 +115,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-dkzDqf gcKDBg"
+      class="sc-dkrFOg iRdyJO"
     >
       <h1>
          Move the bug to eat all food! 
@@ -177,12 +177,12 @@ Object {
 `;
 
 exports[`ScoreCard renders 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-gsnTZi hcNodn"
+        class="sc-gswNZR fbIwTo"
       >
         <h1>
            Scores: 
@@ -194,7 +194,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-gsnTZi hcNodn"
+      class="sc-gswNZR fbIwTo"
     >
       <h1>
          Scores: 

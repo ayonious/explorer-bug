@@ -3,7 +3,7 @@
  */
 
 import { render } from '@testing-library/react';
-import expect from 'expect';
+import { expect } from '@jest/globals';
 import React from 'react';
 
 import JoyPad from '../src/components/JoyPad';

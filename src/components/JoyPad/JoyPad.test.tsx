@@ -6,7 +6,7 @@ import { render } from '@testing-library/react';
 import { expect } from '@jest/globals';
 import React from 'react';
 
-import JoyPad from '../src/components/JoyPad';
+import JoyPad from '.';
 
 it('JoyPad renders', () => {
   const func = () => {};

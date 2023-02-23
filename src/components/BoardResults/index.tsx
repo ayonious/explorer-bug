@@ -1,5 +1,5 @@
-import BugReportTwoToneIcon from '@material-ui/icons/BugReportTwoTone';
-import EcoIcon from '@material-ui/icons/Eco';
+import BugReportIcon from '@mui/icons-material/BugReport';
+import FilterVintageIcon from '@mui/icons-material/FilterVintage';
 import React from 'react';
 
 import {
@@ -27,8 +27,8 @@ const inputToPlayerIcon = (
         isLocationForPlayer ? robotPosToFlightStyle(robotState) : undefined
       }
     >
-      {isLocationForPlayer && <BugReportTwoToneIcon />}
-      {isLocationForFood && <EcoIcon />}
+      {isLocationForPlayer && <BugReportIcon />}
+      {isLocationForFood && <FilterVintageIcon />}
       {isBlank && ''}
     </div>
   );

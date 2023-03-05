@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Movements 1`] = `
+{
+  "col": 2,
+  "direction": 0,
+  "row": 2,
+}
+`;
+
+exports[`Movements 2`] = `
+{
+  "col": 1,
+  "direction": 3,
+  "row": 2,
+}
+`;
+
+exports[`Movements 3`] = `
+{
+  "col": 1,
+  "direction": 1,
+  "row": 2,
+}
+`;
+
+exports[`Movements 4`] = `
+{
+  "col": 1,
+  "direction": 1,
+  "row": 3,
+}
+`;
+
+exports[`Movements 5`] = `
+{
+  "col": 1,
+  "direction": 0,
+  "row": 2,
+}
+`;
+
+exports[`Movements 6`] = `
+{
+  "col": 1,
+  "direction": 2,
+  "row": 2,
+}
+`;
+
+exports[`Movements 7`] = `
+{
+  "col": 0,
+  "direction": 2,
+  "row": 2,
+}
+`;
+
+exports[`Movements 8`] = `
+{
+  "col": 1,
+  "direction": 1,
+  "row": 2,
+}
+`;
+
+exports[`Movements 9`] = `
+{
+  "col": 1,
+  "direction": 3,
+  "row": 2,
+}
+`;
+
+exports[`Movements 10`] = `
+{
+  "col": 1,
+  "direction": 3,
+  "row": 1,
+}
+`;
+
+exports[`Movements 11`] = `
+{
+  "col": 1,
+  "direction": 2,
+  "row": 2,
+}
+`;
+
+exports[`Movements 12`] = `
+{
+  "col": 1,
+  "direction": 0,
+  "row": 2,
+}
+`;
+
+exports[`RobotState 1`] = `
+{
+  "transform": "rotate(90deg)",
+}
+`;
+
+exports[`RobotState 2`] = `
+{
+  "transform": "rotate(180deg)",
+}
+`;
+
+exports[`RobotState 3`] = `
+{
+  "transform": "rotate(270deg)",
+}
+`;
+
+exports[`RobotState 4`] = `
+{
+  "transform": "",
+}
+`;

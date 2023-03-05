@@ -60,6 +60,22 @@ it('Next', () => {
       ]
     )
   ).toBe(124);
+
+  expect(
+    getNewScore(
+      {
+        col: 1,
+        row: 2,
+        direction: 0,
+      },
+      123,
+      [
+        [1, 1, 0],
+        [1, 0, 1],
+        [1, 0, 1],
+      ]
+    )
+  ).toBe(123);
 });
 
 it('RobotState', () => {

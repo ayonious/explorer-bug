@@ -22,3 +22,11 @@ jobs:
       - run:
           name: 'Upload codecov report'
           command: yarn codecov
+  cyress-test:
+    orbs:
+      cypress: cypress-io/cypress@3
+    workflows:
+      build:
+        jobs:
+          - cypress/run # "run" job comes from "Cypress" orb
+          start-command: yarn test-integration

@@ -28,5 +28,5 @@ jobs:
     workflows:
       build:
         jobs:
-          - cypress/run # "run" job comes from "Cypress" orb
-          start-command: yarn test-integration
+          - cypress/run: # "run" job comes from "Cypress" orb
+            start-command: yarn test-integration

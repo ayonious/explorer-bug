@@ -41,7 +41,11 @@ const CreateCell = (props: {
   colId: number;
 }) => {
   const { robotState, rowId, colId, cellState } = props;
-  return <Cell>{inputToPlayerIcon(robotState, cellState, rowId, colId)}</Cell>;
+  return (
+    <Cell data-testid={`cell-${rowId}-${colId}`}>
+      {inputToPlayerIcon(robotState, cellState, rowId, colId)}
+    </Cell>
+  );
 };
 
 const CreateRow = (props: {

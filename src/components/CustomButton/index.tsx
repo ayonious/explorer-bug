@@ -3,10 +3,20 @@ import * as React from 'react';
 
 import { CustomButtonDiv } from './styles';
 
-const CustomButton = (props: any) => {
+interface Props {
+  title: string;
+  onClick: () => void;
+}
+
+const CustomButton = (props: Props) => {
   return (
     <CustomButtonDiv>
-      <Button variant="contained" color="primary" onClick={props.onClick}>
+      <Button
+        variant="contained"
+        color="primary"
+        onClick={props.onClick}
+        data-testid={`move-button-${props.title}`}
+      >
         {props.title}
       </Button>
     </CustomButtonDiv>

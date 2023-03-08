@@ -3,12 +3,6 @@ jobs:
   build:
     docker:
       - image: cimg/node:19.7.0
-    orbs:
-      # "cypress-io/cypress@3" installs the latest published
-      # version "s.x.y" of the orb. We recommend you then use
-      # the strict explicit version "cypress-io/cypress@3.x.y"
-      # to lock the version and prevent unexpected CI changes
-      cypress: cypress-io/cypress@3
     steps:
       - checkout
       - restore_cache:
@@ -28,6 +22,3 @@ jobs:
       - run:
           name: 'Upload codecov report'
           command: yarn codecov
-      - run:
-          name: 'Integration Test'
-          command: yarn test-inetegration

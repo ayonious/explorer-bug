@@ -41,7 +41,6 @@ const genFoodLocation = (rowNums: number, colNums: number): number[][] => {
 export default class Dashboard extends React.Component<Props, State> {
   constructor(props: Props) {
     super(props);
-    this.changedInput = this.changedInput.bind(this);
     this.handleGo = this.handleGo.bind(this);
     this.handleLeft = this.handleLeft.bind(this);
     this.handleRight = this.handleRight.bind(this);
@@ -55,10 +54,6 @@ export default class Dashboard extends React.Component<Props, State> {
       score: 0,
       gridState: genFoodLocation(ROW_LIMIT, COL_LIMIT),
     };
-  }
-
-  changedInput(event: any) {
-    this.setState({ liveInputScript: event.target.value });
   }
 
   handleGo() {

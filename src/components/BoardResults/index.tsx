@@ -95,7 +95,7 @@ interface Props {
 
 const BoardResults = (props: Props) => {
   return (
-    <Grid>
+    <Grid data-testid="game-board">
       <CreateRows
         robotState={props.robotState}
         gridState={props.gridState}

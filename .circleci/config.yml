@@ -23,7 +23,7 @@ jobs:
           name: 'Upload codecov report'
           command: yarn codecov
   test:
-    orbs:
+    docker:
       cypress: cypress-io/cypress@3
     steps:
       - checkout

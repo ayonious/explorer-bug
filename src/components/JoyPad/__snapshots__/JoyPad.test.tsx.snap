@@ -4,10 +4,10 @@ exports[`JoyPad renders 1`] = `
 <div>
   <div>
     <div
-      class="sc-beySbM ixGJPw"
+      class="sc-beqWaB cVbQTx"
     >
       <div
-        class="sc-guDLRT gUVlpG"
+        class="sc-gueYoa bGbOlf"
       >
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-sghohy-MuiButtonBase-root-MuiButton-root"
@@ -23,10 +23,10 @@ exports[`JoyPad renders 1`] = `
       </div>
     </div>
     <div
-      class="sc-beySbM ixGJPw"
+      class="sc-beqWaB cVbQTx"
     >
       <div
-        class="sc-guDLRT gUVlpG"
+        class="sc-gueYoa bGbOlf"
       >
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-sghohy-MuiButtonBase-root-MuiButton-root"
@@ -41,7 +41,7 @@ exports[`JoyPad renders 1`] = `
         </button>
       </div>
       <div
-        class="sc-guDLRT gUVlpG"
+        class="sc-gueYoa bGbOlf"
       >
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-sghohy-MuiButtonBase-root-MuiButton-root"

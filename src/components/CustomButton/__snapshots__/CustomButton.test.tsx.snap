@@ -6,7 +6,7 @@ exports[`CustomButton renders 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-beySbM lkWFWs"
+        class="sc-beqWaB gnskVx"
       >
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-sghohy-MuiButtonBase-root-MuiButton-root"
@@ -24,7 +24,7 @@ exports[`CustomButton renders 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-beySbM lkWFWs"
+      class="sc-beqWaB gnskVx"
     >
       <button
         class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-sghohy-MuiButtonBase-root-MuiButton-root"

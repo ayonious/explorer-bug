@@ -6,7 +6,6 @@
   "packageRules": [
     {
       "packagePatterns": [ "*" ],
-      "excludePackagePatterns": ["webpack-cli"],
       "groupName": "all dependencies",
       "groupSlug": "all"    
     },

@@ -2,7 +2,7 @@
 
 exports[`CountryResults Test More Movement 1`] = `
 <div
-  class="sc-gueYoa eLsPiP"
+  class="sc-gsDLol jLsfxb"
   data-testid="cell-0-3"
 >
   <div
@@ -25,7 +25,7 @@ exports[`CountryResults Test More Movement 1`] = `
 
 exports[`CountryResults Test Rotation 1`] = `
 <div
-  class="sc-gueYoa eLsPiP"
+  class="sc-gsDLol jLsfxb"
   data-testid="cell-0-0"
 >
   <div
@@ -48,7 +48,7 @@ exports[`CountryResults Test Rotation 1`] = `
 
 exports[`CountryResults Test Rotation 2`] = `
 <div
-  class="sc-gueYoa eLsPiP"
+  class="sc-gsDLol jLsfxb"
   data-testid="cell-0-0"
 >
   <div
@@ -71,7 +71,7 @@ exports[`CountryResults Test Rotation 2`] = `
 
 exports[`CountryResults Test Rotation 3`] = `
 <div
-  class="sc-gueYoa eLsPiP"
+  class="sc-gsDLol jLsfxb"
   data-testid="cell-0-0"
 >
   <div

@@ -6,7 +6,7 @@ exports[`Greeting renders 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-beqWaB qLyaA"
+        class="sc-bdvuGq kSiELm"
       >
         <h1>
            Move the bug to eat all food! 
@@ -16,7 +16,7 @@ exports[`Greeting renders 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-beqWaB qLyaA"
+      class="sc-bdvuGq kSiELm"
     >
       <h1>
          Move the bug to eat all food! 

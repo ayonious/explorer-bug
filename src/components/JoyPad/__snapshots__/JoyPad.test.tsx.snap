@@ -4,13 +4,13 @@ exports[`JoyPad renders 1`] = `
 <div>
   <div>
     <div
-      class="sc-bdvuGq kQjViH"
+      class="sc-aYaIB eNAYER"
     >
       <div
-        class="sc-gsDLol jierFj"
+        class="sc-gEvDqW nZQjR"
       >
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-sghohy-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-sghohy-MuiButtonBase-root-MuiButton-root"
           data-testid="move-button-Go"
           tabindex="0"
           type="button"
@@ -23,13 +23,13 @@ exports[`JoyPad renders 1`] = `
       </div>
     </div>
     <div
-      class="sc-bdvuGq kQjViH"
+      class="sc-aYaIB eNAYER"
     >
       <div
-        class="sc-gsDLol jierFj"
+        class="sc-gEvDqW nZQjR"
       >
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-sghohy-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-sghohy-MuiButtonBase-root-MuiButton-root"
           data-testid="move-button-Left"
           tabindex="0"
           type="button"
@@ -41,10 +41,10 @@ exports[`JoyPad renders 1`] = `
         </button>
       </div>
       <div
-        class="sc-gsDLol jierFj"
+        class="sc-gEvDqW nZQjR"
       >
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-sghohy-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-sghohy-MuiButtonBase-root-MuiButton-root"
           data-testid="move-button-Right"
           tabindex="0"
           type="button"

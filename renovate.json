@@ -7,23 +7,14 @@
     {
       "packagePatterns": [ "*" ],
       "groupName": "all dependencies",
-      "groupSlug": "all"    
-    },
-    {
-      "matchDepTypes": ["devDependencies"],
-      "automerge": true
-    },
-    {
-      "matchUpdateTypes": ["minor", "patch"],
-      "matchCurrentVersion": "!/^0/",
-      "automerge": true
+      "groupSlug": "all"
     }
   ],
   "rangeStrategy": "bump",
   "automerge": true,
+  "automergeType": "pr",
   "schedule": "before 3am on Monday",
   "lockFileMaintenance": {
-    "enabled": true,
-    "automerge": true
+    "enabled": true
   }
 }

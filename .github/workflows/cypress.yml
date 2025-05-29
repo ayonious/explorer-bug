@@ -51,7 +51,7 @@ jobs:
         uses: cypress-io/github-action@v6.9.2
         with:
           start: yarn start
-          wait-on: 'http://localhost:3000'
+          wait-on: 'http://localhost:8080'
           wait-on-timeout: 120
           browser: chrome
           record: false

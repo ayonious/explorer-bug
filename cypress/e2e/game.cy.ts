@@ -5,7 +5,7 @@ describe('Explorer Bug Game', () => {
 
   it('should load the game successfully', () => {
     cy.get('body').should('be.visible')
-    cy.contains('Explorer Bug').should('be.visible')
+    cy.contains('Move the bug to eat all food!').should('be.visible')
   })
 
   it('should have basic game controls visible', () => {

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Movements 1`] = `
+exports[`Robot Movement Tests should handle all basic movement combinations 1`] = `
 {
   "col": 2,
   "direction": 0,
@@ -8,7 +8,7 @@ exports[`Movements 1`] = `
 }
 `;
 
-exports[`Movements 2`] = `
+exports[`Robot Movement Tests should handle all basic movement combinations 2`] = `
 {
   "col": 1,
   "direction": 3,
@@ -16,7 +16,7 @@ exports[`Movements 2`] = `
 }
 `;
 
-exports[`Movements 3`] = `
+exports[`Robot Movement Tests should handle all basic movement combinations 3`] = `
 {
   "col": 1,
   "direction": 1,
@@ -24,7 +24,7 @@ exports[`Movements 3`] = `
 }
 `;
 
-exports[`Movements 4`] = `
+exports[`Robot Movement Tests should handle all basic movement combinations 4`] = `
 {
   "col": 1,
   "direction": 1,
@@ -32,7 +32,7 @@ exports[`Movements 4`] = `
 }
 `;
 
-exports[`Movements 5`] = `
+exports[`Robot Movement Tests should handle all basic movement combinations 5`] = `
 {
   "col": 1,
   "direction": 0,
@@ -40,7 +40,7 @@ exports[`Movements 5`] = `
 }
 `;
 
-exports[`Movements 6`] = `
+exports[`Robot Movement Tests should handle all basic movement combinations 6`] = `
 {
   "col": 1,
   "direction": 2,
@@ -48,7 +48,7 @@ exports[`Movements 6`] = `
 }
 `;
 
-exports[`Movements 7`] = `
+exports[`Robot Movement Tests should handle all basic movement combinations 7`] = `
 {
   "col": 0,
   "direction": 2,
@@ -56,7 +56,7 @@ exports[`Movements 7`] = `
 }
 `;
 
-exports[`Movements 8`] = `
+exports[`Robot Movement Tests should handle all basic movement combinations 8`] = `
 {
   "col": 1,
   "direction": 1,
@@ -64,7 +64,7 @@ exports[`Movements 8`] = `
 }
 `;
 
-exports[`Movements 9`] = `
+exports[`Robot Movement Tests should handle all basic movement combinations 9`] = `
 {
   "col": 1,
   "direction": 3,
@@ -72,7 +72,7 @@ exports[`Movements 9`] = `
 }
 `;
 
-exports[`Movements 10`] = `
+exports[`Robot Movement Tests should handle all basic movement combinations 10`] = `
 {
   "col": 1,
   "direction": 3,
@@ -80,7 +80,7 @@ exports[`Movements 10`] = `
 }
 `;
 
-exports[`Movements 11`] = `
+exports[`Robot Movement Tests should handle all basic movement combinations 11`] = `
 {
   "col": 1,
   "direction": 2,
@@ -88,7 +88,7 @@ exports[`Movements 11`] = `
 }
 `;
 
-exports[`Movements 12`] = `
+exports[`Robot Movement Tests should handle all basic movement combinations 12`] = `
 {
   "col": 1,
   "direction": 0,
@@ -96,25 +96,49 @@ exports[`Movements 12`] = `
 }
 `;
 
-exports[`RobotState 1`] = `
+exports[`Robot Style Tests should handle edge positions 1`] = `
 {
   "transform": "rotate(90deg)",
 }
 `;
 
-exports[`RobotState 2`] = `
+exports[`Robot Style Tests should handle edge positions 2`] = `
+{
+  "transform": "rotate(90deg)",
+}
+`;
+
+exports[`Robot Style Tests should handle edge positions 3`] = `
+{
+  "transform": "rotate(90deg)",
+}
+`;
+
+exports[`Robot Style Tests should handle edge positions 4`] = `
+{
+  "transform": "rotate(90deg)",
+}
+`;
+
+exports[`Robot Style Tests should return correct rotation styles for all directions 1`] = `
+{
+  "transform": "rotate(90deg)",
+}
+`;
+
+exports[`Robot Style Tests should return correct rotation styles for all directions 2`] = `
 {
   "transform": "rotate(180deg)",
 }
 `;
 
-exports[`RobotState 3`] = `
+exports[`Robot Style Tests should return correct rotation styles for all directions 3`] = `
 {
   "transform": "rotate(270deg)",
 }
 `;
 
-exports[`RobotState 4`] = `
+exports[`Robot Style Tests should return correct rotation styles for all directions 4`] = `
 {
   "transform": "",
 }

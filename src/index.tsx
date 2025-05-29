@@ -1,7 +1,9 @@
 import * as React from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 import Dashboard from './components/Dashboard';
 
 const rootElement = document.getElementById('root');
-render(<Dashboard />, rootElement);
+if (!rootElement) throw new Error('Failed to find the root element');
+const root = createRoot(rootElement);
+root.render(<Dashboard />);

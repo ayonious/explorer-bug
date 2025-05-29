@@ -22,7 +22,7 @@ jobs:
       run: yarn install
       
     - name: Run tests with coverage
-      run: yarn test --coverage
+      run: yarn unit-test --coverage
       
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v4

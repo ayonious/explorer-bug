@@ -6,7 +6,7 @@ exports[`ScoreCard renders 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="sc-aYaIB bZEnvo"
+        class="sc-bXdtCk lfUsMd"
       >
         <h1>
            Scores: 
@@ -18,7 +18,7 @@ exports[`ScoreCard renders 1`] = `
   </body>,
   "container": <div>
     <div
-      class="sc-aYaIB bZEnvo"
+      class="sc-bXdtCk lfUsMd"
     >
       <h1>
          Scores: 

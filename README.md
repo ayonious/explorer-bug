@@ -3,6 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c7820f18-d7e2-4b89-aaf6-e8163fd9811f/deploy-status)](https://app.netlify.com/sites/exploringbug/deploys)
 [![CircleCI](https://circleci.com/gh/ayonious/explorer-bug.svg?style=svg)](https://circleci.com/gh/ayonious/explorer-bug)
 [![codecov](https://codecov.io/gh/ayonious/explorer-bug/branch/master/graph/badge.svg)](https://codecov.io/gh/ayonious/explorer-bug)
+[![Cypress Tests](https://github.com/ayonious/explorer-bug/actions/workflows/cypress.yml/badge.svg)](https://github.com/ayonious/explorer-bug/actions/workflows/cypress.yml)
 
 Simple React app to explore the 2d interface with a bug
 

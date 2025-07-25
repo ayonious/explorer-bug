@@ -83,3 +83,70 @@ it('EndGamePlay', () => {
     }
   }
 });
+
+it('Logs are toggled when clicking the toggle button', () => {
+  render(<Dashboard />);
+
+  // Initially logs should be hidden
+  expect(screen.queryByTestId('game-logs')).not.toBeInTheDocument();
+
+  // Click toggle logs button
+  const toggleButton = screen.getByTestId('toggle-logs-button');
+  fireEvent.click(toggleButton);
+
+  // Logs should now be visible
+  expect(screen.getByTestId('game-logs')).toBeInTheDocument();
+
+  // Click toggle logs button again
+  fireEvent.click(toggleButton);
+
+  // Logs should be hidden again
+  expect(screen.queryByTestId('game-logs')).not.toBeInTheDocument();
+});
+
+it('Logs are generated when moving the bug', () => {
+  // Clear logs before test
+  const { gameLogger } = require('../../helpers/Logger');
+  gameLogger.clearLogs();
+  
+  render(<Dashboard />);
+
+  // Show logs
+  const toggleButton = screen.getByTestId('toggle-logs-button');
+  fireEvent.click(toggleButton);
+
+  // Initially should have only game start log
+  const logItems = screen.getAllByRole('listitem');
+  expect(logItems.length).toBeGreaterThanOrEqual(1);
+  expect(logItems[0].textContent).toContain('GAME_START');
+
+  // Move bug
+  const goButton = screen.getByTestId('move-button-Go');
+  fireEvent.click(goButton);
+
+  // Should have additional movement log
+  const updatedLogItems = screen.getAllByRole('listitem');
+  expect(updatedLogItems.length).toBeGreaterThan(logItems.length);
+  expect(updatedLogItems[updatedLogItems.length - 1].textContent).toContain('MOVEMENT');
+});
+
+it('Reset button resets the game state', () => {
+  render(<Dashboard />);
+
+  const goButton = screen.getByTestId('move-button-Go');
+  const resetButton = screen.getByTestId('reset-game-button');
+
+  // Move bug a few times
+  fireEvent.click(goButton);
+  fireEvent.click(goButton);
+  fireEvent.click(goButton);
+  
+  // Verify bug has moved
+  checkIfPositionContainsBug(0, 3);
+  
+  // Reset game
+  fireEvent.click(resetButton);
+  
+  // Verify bug is back at starting position
+  checkIfPositionContainsBug(0, 0);
+});

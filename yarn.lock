@@ -1684,7 +1684,7 @@
   dependencies:
     "@sinonjs/commons" "^3.0.1"
 
-"@testing-library/dom@^10.4.0":
+"@testing-library/dom@^10.4.1":
   version "10.4.1"
   resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-10.4.1.tgz#d444f8a889e9a46e9a3b4f3b88e0fcb3efb6cf95"
   integrity sha512-o4PXJQidqJl82ckFaXUeoAW+XysPLauYI43Abki5hABd853iMhitooc6znOnczgbTYmEP6U6/y1ZyKAIsvMKGg==
@@ -5863,10 +5863,10 @@ raw-body@2.5.2:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-react-dom@19.1.0:
-  version "19.1.0"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-19.1.0.tgz#133558deca37fa1d682708df8904b25186793623"
-  integrity sha512-Xs1hdnE+DyKgeHJeJznQmYMIBG3TKIHJJT95Q58nHLSrElKlGQqDTR2HQ9fx5CN/Gk6Vh/kupBTDLU11/nDk/g==
+react-dom@19.1.1:
+  version "19.1.1"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-19.1.1.tgz#2daa9ff7f3ae384aeb30e76d5ee38c046dc89893"
+  integrity sha512-Dlq/5LAZgF0Gaz6yiqZCf6VCcZs1ghAJyrsu84Q/GT0gV+mCxbfmKNoGRKBYMJ8IEdGPqu49YWXD02GCknEDkw==
   dependencies:
     scheduler "^0.26.0"
 
@@ -5895,12 +5895,17 @@ react-is@^19.1.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-19.1.0.tgz#805bce321546b7e14c084989c77022351bbdd11b"
   integrity sha512-Oe56aUPnkHyyDxxkvqtd7KkdQP5uIUfHxd5XTb3wE9d/kRnZLmKbDB0GWk919tdQ+mxxPtG6EAs6RMT6i1qtHg==
 
-react-test-renderer@^19.1.0:
-  version "19.1.0"
-  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-19.1.0.tgz#89e1baa9e45a6da064b9760f92251d5b8e1f34ab"
-  integrity sha512-jXkSl3CpvPYEF+p/eGDLB4sPoDX8pKkYvRl9+rR8HxLY0X04vW7hCm1/0zHoUSjPZ3bDa+wXWNTDVIw/R8aDVw==
+react-is@^19.1.1:
+  version "19.1.1"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-19.1.1.tgz#038ebe313cf18e1fd1235d51c87360eb87f7c36a"
+  integrity sha512-tr41fA15Vn8p4X9ntI+yCyeGSf1TlYaY5vlTZfQmeLBrFo3psOPX6HhTDnFNL9uj3EhP0KAQ80cugCl4b4BERA==
+
+react-test-renderer@^19.1.1:
+  version "19.1.1"
+  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-19.1.1.tgz#c1e57b7a9c7291e3f52c489022071ac39f55155a"
+  integrity sha512-aGRXI+zcBTtg0diHofc7+Vy97nomBs9WHHFY1Csl3iV0x6xucjNYZZAkiVKGiNYUv23ecOex5jE67t8ZzqYObA==
   dependencies:
-    react-is "^19.1.0"
+    react-is "^19.1.1"
     scheduler "^0.26.0"
 
 react-transition-group@^4.4.5:
@@ -5913,10 +5918,10 @@ react-transition-group@^4.4.5:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-react@19.1.0:
-  version "19.1.0"
-  resolved "https://registry.yarnpkg.com/react/-/react-19.1.0.tgz#926864b6c48da7627f004795d6cce50e90793b75"
-  integrity sha512-FS+XFBNvn3GTAWq26joslQgWNoFu08F4kl0J4CgdNKADkdSGXQyTCnKteIAJy96Br6YbpEU1LSzV5dYtjMkMDg==
+react@19.1.1:
+  version "19.1.1"
+  resolved "https://registry.yarnpkg.com/react/-/react-19.1.1.tgz#06d9149ec5e083a67f9a1e39ce97b06a03b644af"
+  integrity sha512-w8nqGImo45dmMIfljjMwOGtbmC/mk4CMYhWIicdSflH91J9TyCyczcPFXJzrZ/ZXcgGRFeP6BU0BEJTw6tZdfQ==
 
 readable-stream@^2.0.1:
   version "2.3.8"
@@ -7075,10 +7080,10 @@ webpack-sources@^3.3.3:
   resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-3.3.3.tgz#d4bf7f9909675d7a070ff14d0ef2a4f3c982c723"
   integrity sha512-yd1RBzSGanHkitROoPFd6qsrxt+oFhg/129YzheDGqeustzX0vTZJZsSsQjVQC4yzBQ56K55XU8gaNCtIzOnTg==
 
-webpack@^5.100.2:
-  version "5.100.2"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.100.2.tgz#e2341facf9f7de1d702147c91bcb65b693adf9e8"
-  integrity sha512-QaNKAvGCDRh3wW1dsDjeMdDXwZm2vqq3zn6Pvq4rHOEOGSaUMgOOjG2Y9ZbIGzpfkJk9ZYTHpDqgDfeBDcnLaw==
+webpack@^5.101.0:
+  version "5.101.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.101.0.tgz#4b81407ffad9857f81ff03f872e3369b9198cc9d"
+  integrity sha512-B4t+nJqytPeuZlHuIKTbalhljIFXeNRqrUGAQgTGlfOl2lXXKXw+yZu6bicycP+PUlM44CxBjCFD6aciKFT3LQ==
   dependencies:
     "@types/eslint-scope" "^3.7.7"
     "@types/estree" "^1.0.8"

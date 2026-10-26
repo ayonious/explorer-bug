@@ -7,15 +7,13 @@ import {
   ROW_LIMIT,
 } from '../../helpers/DirectionManager';
 import type { RobotState } from '../../helpers/DirectionManager';
-import { Cell, Grid, Player, Row, YumBubble } from './styles';
+import { Cell, Grid, Row } from './styles';
 
 const inputToPlayerIcon = (
   robotState: RobotState,
   cellState: number,
   rowId: number,
-  colId: number,
-  showYum: boolean,
-  yumKey: number
+  colId: number
 ) => {
   const isLocationForPlayer =
     robotState.col === colId && robotState.row === rowId;
@@ -24,12 +22,7 @@ const inputToPlayerIcon = (
 
   return (
     <div>
-      {isLocationForPlayer && (
-        <Player>
-          <div style={robotPosToFlightStyle(robotState)}><BugIcon /></div>
-          {showYum && <YumBubble key={yumKey} data-testid="yum-bubble">Yum!</YumBubble>}
-        </Player>
-      )}
+      {isLocationForPlayer && <div style={robotPosToFlightStyle(robotState)}><BugIcon /></div>}
       {isLocationForFood && <StrawberryIcon />}
       {isBlank && ''}
     </div>
@@ -41,13 +34,11 @@ const CreateCell = (props: {
   cellState: number;
   rowId: number;
   colId: number;
-  showYum?: boolean;
-  yumKey?: number;
 }) => {
-  const { robotState, rowId, colId, cellState, showYum, yumKey } = props;
+  const { robotState, rowId, colId, cellState } = props;
   return (
     <Cell data-testid={`cell-${rowId}-${colId}`}>
-      {inputToPlayerIcon(robotState, cellState, rowId, colId, showYum, yumKey)}
+      {inputToPlayerIcon(robotState, cellState, rowId, colId)}
     </Cell>
   );
 };
@@ -57,10 +48,8 @@ const CreateRow = (props: {
   rowGrid: number[];
   colCount: number;
   rowId: number;
-  showYum: boolean;
-  yumKey: number;
 }) => {
-  const { robotState, colCount, rowId, rowGrid, showYum, yumKey } = props;
+  const { robotState, colCount, rowId, rowGrid } = props;
   const columnList = Array(colCount)
     .fill(0)
     .map((e, colId) => (
@@ -70,8 +59,6 @@ const CreateRow = (props: {
         cellState={rowGrid[colId]}
         rowId={rowId}
         colId={colId}
-        showYum={showYum}
-        yumKey={yumKey}
       />
     ));
   return <Row>{columnList}</Row>;
@@ -81,10 +68,8 @@ const CreateRows = (props: {
   robotState: RobotState;
   gridState: number[][];
   rowCount: number;
-  showYum: boolean;
-  yumKey: number;
 }) => {
-  const { robotState, rowCount, gridState, showYum, yumKey } = props;
+  const { robotState, rowCount, gridState } = props;
   const rowList = Array(rowCount)
     .fill(0)
     .map((e, rowId) => (
@@ -94,8 +79,6 @@ const CreateRows = (props: {
         rowGrid={gridState[rowId]}
         rowId={rowId}
         colCount={COL_LIMIT}
-        showYum={showYum}
-        yumKey={yumKey}
       />
     ));
   return <div>{rowList}</div>;
@@ -103,8 +86,6 @@ const CreateRows = (props: {
 interface Props {
   robotState: RobotState;
   gridState: number[][];
-  showYum: boolean;
-  yumKey: number;
 }
 
 const BoardResults = (props: Props) => {
@@ -114,8 +95,6 @@ const BoardResults = (props: Props) => {
         robotState={props.robotState}
         gridState={props.gridState}
         rowCount={ROW_LIMIT}
-        showYum={props.showYum ?? false}
-        yumKey={props.yumKey ?? 0}
       />
     </Grid>
   );

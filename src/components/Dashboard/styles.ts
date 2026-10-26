@@ -52,3 +52,22 @@ export const KeyboardHint = styled.aside`
     padding: 14px;
   }
 `;
+
+export const HeadingSlot = styled.div`
+  height: 120px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+    font-size: clamp(1.4rem, 5vw, 2rem);
+  }
+
+  @media (max-width: 600px) {
+    height: 144px;
+  }
+`;

@@ -47,7 +47,7 @@ describe('BoardResults Component', () => {
   it('renders robot at correct position', () => {
     render(<BoardResults robotState={mockRobotState} gridState={createMockGrid()} />);
     const robotCell = screen.getByTestId(`cell-${mockRobotState.row}-${mockRobotState.col}`);
-    expect(robotCell.querySelector('svg[data-testid="BugReportIcon"]')).toBeInTheDocument();
+    expect(robotCell.querySelector('svg[data-testid="bug-icon"]')).toBeInTheDocument();
   });
 
   it('renders food at correct positions', () => {
@@ -63,7 +63,7 @@ describe('BoardResults Component', () => {
         
         const cellElement = screen.getByTestId(`cell-${rowIndex}-${colIndex}`);
         if (cell === 1) {
-          expect(cellElement.querySelector('svg[data-testid="FilterVintageIcon"]')).toBeInTheDocument();
+          expect(cellElement.querySelector('svg[data-testid="strawberry-icon"]')).toBeInTheDocument();
         } else {
           expect(cellElement.querySelector('svg')).not.toBeInTheDocument();
         }
@@ -93,7 +93,7 @@ describe('BoardResults Component', () => {
     const emptyGrid = Array(ROW_LIMIT).fill(null).map(() => Array(COL_LIMIT).fill(0));
     render(<BoardResults robotState={mockRobotState} gridState={emptyGrid} />);
     
-    const foodIcons = screen.queryAllByTestId('FilterVintageIcon');
+    const foodIcons = screen.queryAllByTestId('strawberry-icon');
     expect(foodIcons).toHaveLength(0);
   });
 
@@ -103,7 +103,7 @@ describe('BoardResults Component', () => {
     
     const cells = screen.getAllByTestId(/^cell-\d+-\d+$/);
     const foodCells = cells.filter(cell => 
-      cell.querySelector('svg[data-testid="FilterVintageIcon"]')
+      cell.querySelector('svg[data-testid="strawberry-icon"]')
     );
     
     // Number of food cells should be total cells minus one (robot position)
@@ -121,7 +121,7 @@ describe('BoardResults Component', () => {
     boundaryPositions.forEach(position => {
       render(<BoardResults robotState={position} gridState={createMockGrid()} />);
       const robotCell = screen.getByTestId(`cell-${position.row}-${position.col}`);
-      expect(robotCell.querySelector('svg[data-testid="BugReportIcon"]')).toBeInTheDocument();
+      expect(robotCell.querySelector('svg[data-testid="bug-icon"]')).toBeInTheDocument();
       cleanup();
     });
   });

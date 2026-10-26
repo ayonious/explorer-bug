@@ -160,12 +160,12 @@ it('waits for a click after completing a level and starts the next level', () =>
   expect(screen.getByRole('status')).toHaveTextContent('Hurray! Level 1 complete!');
 
   fireEvent.click(screen.getByTestId('move-button-Go'));
-  expect(screen.getByTestId('cell-0-1').querySelector('[data-testid="BugReportIcon"]')).toBeInTheDocument();
+  expect(screen.getByTestId('cell-0-1').querySelector('[data-testid="bug-icon"]')).toBeInTheDocument();
 
   fireEvent.click(screen.getByTestId('next-level-button'));
   expect(screen.queryByTestId('next-level-button')).not.toBeInTheDocument();
   expect(screen.getByText('Level 2')).toBeInTheDocument();
-  expect(screen.getByTestId('cell-0-0').querySelector('[data-testid="BugReportIcon"]')).toBeInTheDocument();
+  expect(screen.getByTestId('cell-0-0').querySelector('[data-testid="bug-icon"]')).toBeInTheDocument();
 
   fireEvent.click(screen.getByTestId('move-button-Go'));
   expect(screen.getByRole('status')).toHaveTextContent('Hurray! Level 2 complete!');

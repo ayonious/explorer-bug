@@ -28,6 +28,8 @@ interface State {
   score: number;
   gridState: number[][];
   showLogs: boolean;
+  showYum: boolean;
+  yumKey: number;
   level: number;
   levelComplete: boolean;
 }
@@ -47,6 +49,8 @@ const genFoodLocation = (rowNums: number, colNums: number): number[][] => {
 };
 
 export default class Dashboard extends React.Component<Props, State> {
+  private yumTimeout: number | undefined;
+
   constructor(props: Props) {
     super(props);
     this.handleGo = this.handleGo.bind(this);
@@ -67,6 +71,8 @@ export default class Dashboard extends React.Component<Props, State> {
       score: 0,
       gridState: genFoodLocation(ROW_LIMIT, COL_LIMIT),
       showLogs: false,
+      showYum: false,
+      yumKey: 0,
       level: 1,
       levelComplete: false,
     };
@@ -79,6 +85,7 @@ export default class Dashboard extends React.Component<Props, State> {
 
   componentWillUnmount() {
     document.removeEventListener('keydown', this.handleKeyDown);
+    if (this.yumTimeout !== undefined) window.clearTimeout(this.yumTimeout);
   }
 
   handleKeyDown(event: KeyboardEvent) {
@@ -116,6 +123,12 @@ export default class Dashboard extends React.Component<Props, State> {
     this.setState(prevState => ({ showLogs: !prevState.showLogs }));
   }
 
+  showYum() {
+    if (this.yumTimeout !== undefined) window.clearTimeout(this.yumTimeout);
+    this.setState(prevState => ({ showYum: true, yumKey: prevState.yumKey + 1 }));
+    this.yumTimeout = window.setTimeout(() => this.setState({ showYum: false }), 850);
+  }
+
   handleGo() {
     if (this.state.levelComplete) return;
     const newLocation: RobotState = moveForward(this.state.robotState);
@@ -128,6 +141,7 @@ export default class Dashboard extends React.Component<Props, State> {
     // Log score increase if it happened
     if (newScore > this.state.score) {
       gameLogger.logScore(newScore, { row: newLocation.row, col: newLocation.col });
+      this.showYum();
     }
 
     this.setState({
@@ -162,6 +176,7 @@ export default class Dashboard extends React.Component<Props, State> {
     this.setState(prevState => ({
       level: prevState.level + 1,
       levelComplete: false,
+      showYum: false,
       robotState: { row: 0, col: 0, direction: 0 },
       gridState: genFoodLocation(ROW_LIMIT, COL_LIMIT),
     }));
@@ -172,6 +187,7 @@ export default class Dashboard extends React.Component<Props, State> {
     const newState = {
       level: 1,
       levelComplete: false,
+      showYum: false,
       robotState: {
         row: 0,
         col: 0,
@@ -303,6 +319,8 @@ export default class Dashboard extends React.Component<Props, State> {
         <BoardResults
           robotState={this.state.robotState}
           gridState={this.state.gridState}
+          showYum={this.state.showYum}
+          yumKey={this.state.yumKey}
         />
 
         <div>

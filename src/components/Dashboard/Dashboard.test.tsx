@@ -158,6 +158,7 @@ it('waits for a click after completing a level and starts the next level', () =>
   expect(screen.queryByTestId('next-level-button')).not.toBeInTheDocument();
   fireEvent.click(screen.getByTestId('move-button-Go'));
   expect(screen.getByRole('status')).toHaveTextContent('Hurray! Level 1 complete!');
+  expect(screen.getByTestId('yum-bubble')).toHaveTextContent('Yum!');
 
   fireEvent.click(screen.getByTestId('move-button-Go'));
   expect(screen.getByTestId('cell-0-1').querySelector('[data-testid="bug-icon"]')).toBeInTheDocument();

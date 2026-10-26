@@ -5,9 +5,9 @@ import React from 'react';
 import {
   COL_LIMIT,
   robotPosToFlightStyle,
-  RobotState,
   ROW_LIMIT,
 } from '../../helpers/DirectionManager';
+import type { RobotState } from '../../helpers/DirectionManager';
 import { Cell, Grid, Row } from './styles';
 
 const inputToPlayerIcon = (

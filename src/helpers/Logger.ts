@@ -1,4 +1,4 @@
-import { RobotState } from './DirectionManager';
+import type { RobotState } from './DirectionManager';
 
 export enum LogType {
   MOVEMENT = 'MOVEMENT',

@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
-import DownloadIcon from '@mui/icons-material/Download';
 import RestartAltIcon from '@mui/icons-material/RestartAlt';
 
 import {
@@ -8,17 +7,17 @@ import {
   getNewGrid,
   getNewScore,
   moveForward,
-  RobotState,
   ROW_LIMIT,
   turnLeft,
   turnRight,
 } from '../../helpers/DirectionManager';
+import type { RobotState } from '../../helpers/DirectionManager';
 import { gameLogger, LogType } from '../../helpers/Logger';
 import BoardResults from '../BoardResults';
 import Greeting from '../Greeting';
 import JoyPad from '../JoyPad';
 import ScoreCard from '../ScoreCard';
-import { MainDashboard } from './styles';
+import { KeyboardHint, MainDashboard } from './styles';
 import GithubCornerPart from './GitCorner';
 
 interface Props {}
@@ -54,7 +53,6 @@ export default class Dashboard extends React.Component<Props, State> {
     this.handleLeft = this.handleLeft.bind(this);
     this.handleRight = this.handleRight.bind(this);
     this.handleKeyDown = this.handleKeyDown.bind(this);
-    this.downloadLogs = this.downloadLogs.bind(this);
     this.toggleLogs = this.toggleLogs.bind(this);
     this.resetGame = this.resetGame.bind(this);
     this.startNextLevel = this.startNextLevel.bind(this);
@@ -116,10 +114,6 @@ export default class Dashboard extends React.Component<Props, State> {
 
   toggleLogs() {
     this.setState(prevState => ({ showLogs: !prevState.showLogs }));
-  }
-
-  downloadLogs() {
-    gameLogger.downloadLogs();
   }
 
   handleGo() {
@@ -313,29 +307,16 @@ export default class Dashboard extends React.Component<Props, State> {
           {' '}
           <br />{' '}
         </div>
-        <div className="keyboard-controls">
-          <p>Keyboard controls: Arrow keys or WASD, Space to move forward, L to toggle logs</p>
-        </div>
+        <KeyboardHint aria-label="Keyboard controls">
+          <strong>⌨️ Your keyboard can play, too!</strong>
+          <p>
+            Move forward with <kbd>↑</kbd> / <kbd>W</kbd> / <kbd>Space</kbd>
+            <span className="key-divider">·</span>
+            Turn with <kbd>←</kbd> <kbd>→</kbd> or <kbd>A</kbd> <kbd>D</kbd>
+          </p>
+          <small><kbd>R</kbd> Reset <span className="key-divider">·</span> <kbd>L</kbd> Toggle logs</small>
+        </KeyboardHint>
 
-        <div aria-label="Log controls" style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '10px', padding: '16px' }}>
-            <Button
-              variant="outlined"
-              size="small"
-              onClick={this.toggleLogs}
-              data-testid="toggle-logs-button"
-            >
-              {this.state.showLogs ? 'Hide Logs' : 'Show Logs'}
-            </Button>
-            <Button
-              variant="outlined"
-              size="small"
-              startIcon={<DownloadIcon />}
-              onClick={this.downloadLogs}
-              data-testid="download-logs-button"
-            >
-              Download Logs
-            </Button>
-        </div>
         {this.renderLogs()}
       </MainDashboard>
     );

@@ -84,21 +84,20 @@ it('EndGamePlay', () => {
   }
 });
 
-it('Logs are toggled when clicking the toggle button', () => {
+it('Logs are toggled with the keyboard shortcut', () => {
   render(<Dashboard />);
 
   // Initially logs should be hidden
   expect(screen.queryByTestId('game-logs')).not.toBeInTheDocument();
 
-  // Click toggle logs button
-  const toggleButton = screen.getByTestId('toggle-logs-button');
-  fireEvent.click(toggleButton);
+  // Toggle logs with the keyboard shortcut
+  fireEvent.keyDown(document, { key: 'l' });
 
   // Logs should now be visible
   expect(screen.getByTestId('game-logs')).toBeInTheDocument();
 
-  // Click toggle logs button again
-  fireEvent.click(toggleButton);
+  // Toggle logs off again
+  fireEvent.keyDown(document, { key: 'l' });
 
   // Logs should be hidden again
   expect(screen.queryByTestId('game-logs')).not.toBeInTheDocument();
@@ -112,8 +111,7 @@ it('Logs are generated when moving the bug', () => {
   render(<Dashboard />);
 
   // Show logs
-  const toggleButton = screen.getByTestId('toggle-logs-button');
-  fireEvent.click(toggleButton);
+  fireEvent.keyDown(document, { key: 'l' });
 
   // Initially should have only game start log
   const logItems = screen.getAllByRole('listitem');

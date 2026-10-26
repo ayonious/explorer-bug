@@ -150,3 +150,29 @@ it('Reset button resets the game state', () => {
   // Verify bug is back at starting position
   checkIfPositionContainsBug(0, 0);
 });
+
+it('waits for a click after completing a level and starts the next level', () => {
+  // Generate a board with exactly one food, directly ahead of the bug.
+  const random = jest.spyOn(Math, 'random').mockReturnValue(0.99);
+  random.mockReturnValueOnce(0.99).mockReturnValueOnce(0);
+  render(<Dashboard />);
+
+  expect(screen.queryByTestId('next-level-button')).not.toBeInTheDocument();
+  fireEvent.click(screen.getByTestId('move-button-Go'));
+  expect(screen.getByRole('status')).toHaveTextContent('Hurray! Level 1 complete!');
+
+  fireEvent.click(screen.getByTestId('move-button-Go'));
+  expect(screen.getByTestId('cell-0-1').querySelector('[data-testid="BugReportIcon"]')).toBeInTheDocument();
+
+  fireEvent.click(screen.getByTestId('next-level-button'));
+  expect(screen.queryByTestId('next-level-button')).not.toBeInTheDocument();
+  expect(screen.getByText('Level 2')).toBeInTheDocument();
+  expect(screen.getByTestId('cell-0-0').querySelector('[data-testid="BugReportIcon"]')).toBeInTheDocument();
+
+  fireEvent.click(screen.getByTestId('move-button-Go'));
+  expect(screen.getByRole('status')).toHaveTextContent('Hurray! Level 2 complete!');
+  fireEvent.click(screen.getByTestId('reset-game-button'));
+  expect(screen.getByText('Level 1')).toBeInTheDocument();
+  expect(screen.queryByTestId('next-level-button')).not.toBeInTheDocument();
+  random.mockRestore();
+});

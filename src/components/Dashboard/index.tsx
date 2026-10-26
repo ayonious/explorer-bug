@@ -17,7 +17,7 @@ import BoardResults from '../BoardResults';
 import Greeting from '../Greeting';
 import JoyPad from '../JoyPad';
 import ScoreCard from '../ScoreCard';
-import { KeyboardHint, MainDashboard } from './styles';
+import { HeadingSlot, KeyboardHint, MainDashboard } from './styles';
 import GithubCornerPart from './GitCorner';
 
 interface Props {}
@@ -256,7 +256,21 @@ export default class Dashboard extends React.Component<Props, State> {
       <MainDashboard>
         <GithubCornerPart />
         <div>
-          <Greeting />
+          <HeadingSlot>
+            {this.state.levelComplete ? (
+              <div role="status">
+                <Button
+                  variant="contained"
+                  color="success"
+                  onClick={this.startNextLevel}
+                  data-testid="next-level-button"
+                  sx={{ whiteSpace: 'normal', padding: '12px 20px', fontSize: '1.1rem', textTransform: 'none' }}
+                >
+                  Hurray! Level {this.state.level} complete! 🎉 Click to start level {this.state.level + 1}
+                </Button>
+              </div>
+            ) : <Greeting />}
+          </HeadingSlot>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
             <span>Level {this.state.level}</span>
             <ScoreCard score={this.state.score} />
@@ -284,19 +298,7 @@ export default class Dashboard extends React.Component<Props, State> {
           <br />{' '}
         </div>
 
-        {this.state.levelComplete && (
-          <div role="status" style={{ textAlign: 'center', margin: '16px' }}>
-            <Button
-              variant="contained"
-              color="success"
-              onClick={this.startNextLevel}
-              data-testid="next-level-button"
-              sx={{ whiteSpace: 'normal', padding: '16px 24px', fontSize: '1.1rem' }}
-            >
-              Hurray! Level {this.state.level} complete! 🎉 Click to start level {this.state.level + 1}
-            </Button>
-          </div>
-        )}
+
 
         <BoardResults
           robotState={this.state.robotState}

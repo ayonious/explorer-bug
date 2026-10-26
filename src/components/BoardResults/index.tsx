@@ -1,5 +1,4 @@
-import BugReportIcon from '@mui/icons-material/BugReport';
-import FilterVintageIcon from '@mui/icons-material/FilterVintage';
+import { BugIcon, StrawberryIcon } from './icons';
 import React from 'react';
 
 import {
@@ -27,8 +26,8 @@ const inputToPlayerIcon = (
         isLocationForPlayer ? robotPosToFlightStyle(robotState) : undefined
       }
     >
-      {isLocationForPlayer && <BugReportIcon />}
-      {isLocationForFood && <FilterVintageIcon />}
+      {isLocationForPlayer && <BugIcon />}
+      {isLocationForFood && <StrawberryIcon />}
       {isBlank && ''}
     </div>
   );

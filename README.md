@@ -1,5 +1,9 @@
 # Explorer Bug
 
+[![CI](https://github.com/ayonious/explorer-bug/workflows/CI/badge.svg)](https://github.com/ayonious/explorer-bug/actions)
+[![codecov](https://codecov.io/gh/ayonious/explorer-bug/branch/master/graph/badge.svg)](https://codecov.io/gh/ayonious/explorer-bug)
+[![Cypress Tests](https://github.com/ayonious/explorer-bug/actions/workflows/cypress.yml/badge.svg)](https://github.com/ayonious/explorer-bug/actions/workflows/cypress.yml)
+
 A simple game for exploring a 2D world with a bug.
 
 **[▶ Play Explorer Bug](https://ayonious.github.io/explorer-bug/)**
@@ -7,11 +11,6 @@ A simple game for exploring a 2D world with a bug.
 <p align="center">
   <img height="auto" width="350px" alt="Explorer Bug gameplay preview" src="https://cdn.jsdelivr.net/gh/ayonious/explorer-bug@master/documentation/bugdemo.gif">
 </p>
-
-The game is hosted on GitHub Pages and updates automatically when changes are published.
-
-<details>
-<summary>Technical details: local setup, builds, and GitHub Pages deployment</summary>
 
 ## Run locally
 
@@ -22,11 +21,6 @@ yarn install
 yarn start
 ```
 
-## Project checks
-
-[![CI](https://github.com/ayonious/explorer-bug/workflows/CI/badge.svg)](https://github.com/ayonious/explorer-bug/actions)
-[![codecov](https://codecov.io/gh/ayonious/explorer-bug/branch/master/graph/badge.svg)](https://codecov.io/gh/ayonious/explorer-bug)
-[![Cypress Tests](https://github.com/ayonious/explorer-bug/actions/workflows/cypress.yml/badge.svg)](https://github.com/ayonious/explorer-bug/actions/workflows/cypress.yml)
 
 ## Things learned in this project
 
@@ -36,6 +30,12 @@ yarn start
 - Styled Components
 - GitHub Pages deployment
 - Integration testing with Cypress
+
+
+The game is hosted on GitHub Pages and updates automatically when changes are published.
+
+<details>
+<summary>Technical details: local setup, builds, and GitHub Pages deployment</summary>
 
 ## Build and deployment
 

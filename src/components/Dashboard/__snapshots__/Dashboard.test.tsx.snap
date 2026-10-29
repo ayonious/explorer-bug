@@ -1,223 +1,235 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`CountryResults Test More Movement 1`] = `
 <div
-  class="sc-hvigdm hMgiDC"
+  class="sc-gtsusp hxvXGa"
   data-testid="cell-0-3"
 >
-  <div
-    style="transform: rotate(90deg);"
-  >
-    <svg
-      aria-label="Bug"
-      data-testid="bug-icon"
-      fill="none"
-      height="16"
-      role="img"
-      stroke="#dc2626"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2.5"
-      viewBox="0 0 24 24"
-      width="16"
-      xmlns="http://www.w3.org/2000/svg"
+  <div>
+    <div
+      style="transform: rotate(90deg);"
     >
-      <rect
-        height="14"
-        rx="5"
-        width="10"
-        x="7"
-        y="7"
-      />
-      <path
-        d="M9 7V5a3 3 0 0 1 6 0v2M12 8v13M7 10 3 7M7 14H3M7 18l-4 3M17 10l4-3M17 14h4M17 18l4 3"
-      />
-    </svg>
+      <svg
+        aria-label="Bug"
+        data-testid="bug-icon"
+        fill="none"
+        height="23.04"
+        role="img"
+        stroke="#16a34a"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2.5"
+        viewBox="0 0 24 24"
+        width="23.04"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          height="14"
+          rx="5"
+          width="10"
+          x="7"
+          y="7"
+        />
+        <path
+          d="M9 7V5a3 3 0 0 1 6 0v2M12 8v13M7 10 3 7M7 14H3M7 18l-4 3M17 10l4-3M17 14h4M17 18l4 3"
+        />
+      </svg>
+    </div>
   </div>
 </div>
 `;
 
 exports[`CountryResults Test Rotation 1`] = `
 <div
-  class="sc-hvigdm hMgiDC"
+  class="sc-gtsusp hxvXGa"
   data-testid="cell-0-0"
 >
-  <div
-    style=""
-  >
-    <svg
-      aria-label="Bug"
-      data-testid="bug-icon"
-      fill="none"
-      height="16"
-      role="img"
-      stroke="#dc2626"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2.5"
-      viewBox="0 0 24 24"
-      width="16"
-      xmlns="http://www.w3.org/2000/svg"
+  <div>
+    <div
+      style=""
     >
-      <rect
-        height="14"
-        rx="5"
-        width="10"
-        x="7"
-        y="7"
-      />
-      <path
-        d="M9 7V5a3 3 0 0 1 6 0v2M12 8v13M7 10 3 7M7 14H3M7 18l-4 3M17 10l4-3M17 14h4M17 18l4 3"
-      />
-    </svg>
+      <svg
+        aria-label="Bug"
+        data-testid="bug-icon"
+        fill="none"
+        height="23.04"
+        role="img"
+        stroke="#16a34a"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2.5"
+        viewBox="0 0 24 24"
+        width="23.04"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          height="14"
+          rx="5"
+          width="10"
+          x="7"
+          y="7"
+        />
+        <path
+          d="M9 7V5a3 3 0 0 1 6 0v2M12 8v13M7 10 3 7M7 14H3M7 18l-4 3M17 10l4-3M17 14h4M17 18l4 3"
+        />
+      </svg>
+    </div>
   </div>
 </div>
 `;
 
 exports[`CountryResults Test Rotation 2`] = `
 <div
-  class="sc-hvigdm hMgiDC"
+  class="sc-gtsusp hxvXGa"
   data-testid="cell-0-0"
 >
-  <div
-    style="transform: rotate(270deg);"
-  >
-    <svg
-      aria-label="Bug"
-      data-testid="bug-icon"
-      fill="none"
-      height="16"
-      role="img"
-      stroke="#dc2626"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2.5"
-      viewBox="0 0 24 24"
-      width="16"
-      xmlns="http://www.w3.org/2000/svg"
+  <div>
+    <div
+      style="transform: rotate(270deg);"
     >
-      <rect
-        height="14"
-        rx="5"
-        width="10"
-        x="7"
-        y="7"
-      />
-      <path
-        d="M9 7V5a3 3 0 0 1 6 0v2M12 8v13M7 10 3 7M7 14H3M7 18l-4 3M17 10l4-3M17 14h4M17 18l4 3"
-      />
-    </svg>
+      <svg
+        aria-label="Bug"
+        data-testid="bug-icon"
+        fill="none"
+        height="23.04"
+        role="img"
+        stroke="#16a34a"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2.5"
+        viewBox="0 0 24 24"
+        width="23.04"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          height="14"
+          rx="5"
+          width="10"
+          x="7"
+          y="7"
+        />
+        <path
+          d="M9 7V5a3 3 0 0 1 6 0v2M12 8v13M7 10 3 7M7 14H3M7 18l-4 3M17 10l4-3M17 14h4M17 18l4 3"
+        />
+      </svg>
+    </div>
   </div>
 </div>
 `;
 
 exports[`CountryResults Test Rotation 3`] = `
 <div
-  class="sc-hvigdm hMgiDC"
+  class="sc-gtsusp hxvXGa"
   data-testid="cell-0-0"
 >
-  <div
-    style=""
-  >
-    <svg
-      aria-label="Bug"
-      data-testid="bug-icon"
-      fill="none"
-      height="16"
-      role="img"
-      stroke="#dc2626"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2.5"
-      viewBox="0 0 24 24"
-      width="16"
-      xmlns="http://www.w3.org/2000/svg"
+  <div>
+    <div
+      style=""
     >
-      <rect
-        height="14"
-        rx="5"
-        width="10"
-        x="7"
-        y="7"
-      />
-      <path
-        d="M9 7V5a3 3 0 0 1 6 0v2M12 8v13M7 10 3 7M7 14H3M7 18l-4 3M17 10l4-3M17 14h4M17 18l4 3"
-      />
-    </svg>
+      <svg
+        aria-label="Bug"
+        data-testid="bug-icon"
+        fill="none"
+        height="23.04"
+        role="img"
+        stroke="#16a34a"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2.5"
+        viewBox="0 0 24 24"
+        width="23.04"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          height="14"
+          rx="5"
+          width="10"
+          x="7"
+          y="7"
+        />
+        <path
+          d="M9 7V5a3 3 0 0 1 6 0v2M12 8v13M7 10 3 7M7 14H3M7 18l-4 3M17 10l4-3M17 14h4M17 18l4 3"
+        />
+      </svg>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Reset button resets the game state 1`] = `
 <div
-  class="sc-hvigdm hMgiDC"
+  class="sc-gtsusp hxvXGa"
   data-testid="cell-0-3"
 >
-  <div
-    style="transform: rotate(90deg);"
-  >
-    <svg
-      aria-label="Bug"
-      data-testid="bug-icon"
-      fill="none"
-      height="16"
-      role="img"
-      stroke="#dc2626"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2.5"
-      viewBox="0 0 24 24"
-      width="16"
-      xmlns="http://www.w3.org/2000/svg"
+  <div>
+    <div
+      style="transform: rotate(90deg);"
     >
-      <rect
-        height="14"
-        rx="5"
-        width="10"
-        x="7"
-        y="7"
-      />
-      <path
-        d="M9 7V5a3 3 0 0 1 6 0v2M12 8v13M7 10 3 7M7 14H3M7 18l-4 3M17 10l4-3M17 14h4M17 18l4 3"
-      />
-    </svg>
+      <svg
+        aria-label="Bug"
+        data-testid="bug-icon"
+        fill="none"
+        height="23.04"
+        role="img"
+        stroke="#16a34a"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2.5"
+        viewBox="0 0 24 24"
+        width="23.04"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          height="14"
+          rx="5"
+          width="10"
+          x="7"
+          y="7"
+        />
+        <path
+          d="M9 7V5a3 3 0 0 1 6 0v2M12 8v13M7 10 3 7M7 14H3M7 18l-4 3M17 10l4-3M17 14h4M17 18l4 3"
+        />
+      </svg>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Reset button resets the game state 2`] = `
 <div
-  class="sc-hvigdm hMgiDC"
+  class="sc-gtsusp hxvXGa"
   data-testid="cell-0-0"
 >
-  <div
-    style="transform: rotate(90deg);"
-  >
-    <svg
-      aria-label="Bug"
-      data-testid="bug-icon"
-      fill="none"
-      height="16"
-      role="img"
-      stroke="#dc2626"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2.5"
-      viewBox="0 0 24 24"
-      width="16"
-      xmlns="http://www.w3.org/2000/svg"
+  <div>
+    <div
+      style="transform: rotate(90deg);"
     >
-      <rect
-        height="14"
-        rx="5"
-        width="10"
-        x="7"
-        y="7"
-      />
-      <path
-        d="M9 7V5a3 3 0 0 1 6 0v2M12 8v13M7 10 3 7M7 14H3M7 18l-4 3M17 10l4-3M17 14h4M17 18l4 3"
-      />
-    </svg>
+      <svg
+        aria-label="Bug"
+        data-testid="bug-icon"
+        fill="none"
+        height="23.04"
+        role="img"
+        stroke="#16a34a"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2.5"
+        viewBox="0 0 24 24"
+        width="23.04"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          height="14"
+          rx="5"
+          width="10"
+          x="7"
+          y="7"
+        />
+        <path
+          d="M9 7V5a3 3 0 0 1 6 0v2M12 8v13M7 10 3 7M7 14H3M7 18l-4 3M17 10l4-3M17 14h4M17 18l4 3"
+        />
+      </svg>
+    </div>
   </div>
 </div>
 `;

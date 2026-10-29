@@ -1,6 +1,9 @@
 {
   "include": ["./src/*", "test", "src/components/Dashboard/Dashboard.test.tsx", "src/components/JoyPad/JoyPad.test.tsx"],
   "compilerOptions": {
+    "rootDir": ".",
+    "ignoreDeprecations": "6.0",
+    "types": ["node", "jest", "@testing-library/jest-dom"],
     "lib": ["dom", "es2015"],
     "jsx": "react",
     "target": "es5",

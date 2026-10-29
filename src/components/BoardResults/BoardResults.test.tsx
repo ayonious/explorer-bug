@@ -78,7 +78,7 @@ describe('BoardResults Component', () => {
       render(<BoardResults robotState={rotatedRobotState} gridState={createMockGrid()} />);
       
       const robotCell = screen.getByTestId(`cell-${rotatedRobotState.row}-${rotatedRobotState.col}`);
-      const robotIcon = robotCell.querySelector('div');
+      const robotIcon = robotCell.querySelector('[data-testid="bug-icon"]')?.parentElement;
       
       // Check if rotation style is applied
       expect(robotIcon).toHaveStyle({

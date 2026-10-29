@@ -35,7 +35,7 @@ yarn start
 The game is hosted on GitHub Pages and updates automatically when changes are published.
 
 <details>
-<summary>Technical details: local setup, builds, and GitHub Pages deployment</summary>
+<summary>Technical details: builds, and GitHub Pages deployment</summary>
 
 ## Build and deployment
 
@@ -80,25 +80,5 @@ You do **not** need to generate or upload `dist/` manually whenever the code cha
 3. Runs `yarn build` to generate `dist/` on the GitHub runner.
 4. Uploads `dist/` as the Pages artifact.
 5. Publishes that artifact to GitHub Pages after the build succeeds.
-
-### What to push when you change a React component
-
-**Push your source changes, not the generated build files.** For example, after editing a `.tsx` component, commit that component along with any related source, styles, or configuration changes. Do not add `dist/` to the commit, even if you ran `yarn build` locally.
-
-You can make and test multiple edits locally with `yarn start` before committing. You do not need to push after every edit. When you want to publish an update, push your committed changes to `master` (or merge your pull request into `master`).
-
-```text
-Edit source files → Commit and push to master
-                 → GitHub Actions runs yarn build
-                 → Generated dist/ files are published to GitHub Pages
-```
-
-GitHub Actions takes care of building and publishing the updated site. A local `yarn build` is only needed when you want to check the production build yourself; the workflow builds again from the committed source. Changes on other branches and pull requests do not trigger this deployment workflow.
-
-You can follow deployment progress in **Actions → Deploy to GitHub Pages**. You can also redeploy manually there using **Run workflow** with the `master` branch selected.
-
-### Enable Pages for your own fork
-
-In your fork, select **Settings → Pages → Source → GitHub Actions**, then run the **Deploy to GitHub Pages** workflow on `master`. Your site will be available at `https://<your-username>.github.io/<repository-name>/`.
 
 </details>

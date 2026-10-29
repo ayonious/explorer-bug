@@ -1,36 +1,43 @@
 # Explorer Bug
 
+A simple game for exploring a 2D world with a bug.
+
+**[▶ Play Explorer Bug](https://ayonious.github.io/explorer-bug/)**
+
+<p align="center">
+  <img height="auto" width="350px" alt="Explorer Bug gameplay preview" src="https://cdn.jsdelivr.net/gh/ayonious/explorer-bug@master/documentation/bugdemo.gif">
+</p>
+
+The game is hosted on GitHub Pages and updates automatically when changes are published.
+
+<details>
+<summary>Technical details: local setup, builds, and GitHub Pages deployment</summary>
+
+## Run locally
+
+Use Node.js 26, then run:
+
+```sh
+yarn install
+yarn start
+```
+
+## Project checks
+
 [![CI](https://github.com/ayonious/explorer-bug/workflows/CI/badge.svg)](https://github.com/ayonious/explorer-bug/actions)
 [![codecov](https://codecov.io/gh/ayonious/explorer-bug/branch/master/graph/badge.svg)](https://codecov.io/gh/ayonious/explorer-bug)
 [![Cypress Tests](https://github.com/ayonious/explorer-bug/actions/workflows/cypress.yml/badge.svg)](https://github.com/ayonious/explorer-bug/actions/workflows/cypress.yml)
 
-Simple React app to explore the 2d interface with a bug
+## Things learned in this project
 
-<p align="center">
-  <img height="auto" width="350px" alt="Screenshot" src="https://cdn.jsdelivr.net/gh/ayonious/explorer-bug@master/documentation/bugdemo.gif">
-</p>
+- TypeScript
+- React Testing Library
+- Webpack and Babel
+- Styled Components
+- GitHub Pages deployment
+- Integration testing with Cypress
 
-# 🎁 See Deployed
-
-[Play Explorer Bug on GitHub Pages](https://ayonious.github.io/explorer-bug/)
-
-# 🏃‍♂️ Local Running instruction
-
-```
-yarn
-yarn run start
-```
-
-## 🎓 Things that I learnt in this project
-
-1. Ts
-2. Test with React Testing Library
-3. Webpack and babbel
-4. Styled Components
-5. GitHub Pages Deployment
-6. Integration testing with cypress 
-
-## 🚀 Deploy Yourself
+## Build and deployment
 
 ### How GitHub Pages deployment works
 
@@ -94,8 +101,4 @@ You can follow deployment progress in **Actions → Deploy to GitHub Pages**. Yo
 
 In your fork, select **Settings → Pages → Source → GitHub Actions**, then run the **Deploy to GitHub Pages** workflow on `master`. Your site will be available at `https://<your-username>.github.io/<repository-name>/`.
 
-### Optional Vercel deployment
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fayonious%2Fexplorer-bug)
-
-For automatic deployments, import this repository into Vercel and set the production branch to `master`. The checked-in `vercel.json` installs dependencies with Yarn, runs `yarn build`, and serves `dist`. Node.js 26 is specified in `package.json`.
+</details>

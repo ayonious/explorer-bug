@@ -1,6 +1,5 @@
 # Explorer Bug
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c7820f18-d7e2-4b89-aaf6-e8163fd9811f/deploy-status)](https://app.netlify.com/sites/exploringbug/deploys)
 [![CI](https://github.com/ayonious/explorer-bug/workflows/CI/badge.svg)](https://github.com/ayonious/explorer-bug/actions)
 [![codecov](https://codecov.io/gh/ayonious/explorer-bug/branch/master/graph/badge.svg)](https://codecov.io/gh/ayonious/explorer-bug)
 [![Cypress Tests](https://github.com/ayonious/explorer-bug/actions/workflows/cypress.yml/badge.svg)](https://github.com/ayonious/explorer-bug/actions/workflows/cypress.yml)
@@ -13,7 +12,7 @@ Simple React app to explore the 2d interface with a bug
 
 # 🎁 See Deployed
 
-https://exploringbug.netlify.app
+Deploy this repository on Vercel using the button below. Vercel provides the live URL after deployment.
 
 # 🏃‍♂️ Local Running instruction
 
@@ -28,9 +27,11 @@ yarn run start
 2. Test with React Testing Library
 3. Webpack and babbel
 4. Styled Components
-5. Netlify Deployment
+5. Vercel Deployment
 6. Integration testing with cypress 
 
 ## 🚀 Deploy Yourself
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ayonious/explorer-bug)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fayonious%2Fexplorer-bug)
+
+For automatic deployments, import this repository into Vercel and set the production branch to `master`. The checked-in `vercel.json` installs dependencies with Yarn, runs `yarn build`, and serves `dist`. Node.js 24 is specified in `package.json`.

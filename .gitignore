@@ -72,3 +72,5 @@ coverage
 static-resources
 
 .DS_Store
+# Vercel local project settings
+.vercel/

@@ -20,6 +20,8 @@ yarn install
 yarn start
 ```
 
+See the results: http://localhost:8080/
+
 
 ## Things learned in this project
 

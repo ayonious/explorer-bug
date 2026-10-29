@@ -1,6 +1,6 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
-module.exports = {
+module.exports = (_env, argv = {}) => ({
   entry: './src/index.tsx',
   module: {
     rules: [
@@ -9,6 +9,10 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
+          options: {
+            // Keep Babel JSX output aligned with React’s Webpack runtime.
+            envName: argv.mode || 'production',
+          },
         },
       },
       {
@@ -32,4 +36,4 @@ module.exports = {
       favicon: './public/favicon.ico',
     }),
   ],
-};
+});

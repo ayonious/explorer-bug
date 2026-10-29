@@ -17,7 +17,7 @@ jobs:
     
     strategy:
       matrix:
-        node-version: ['24']  # Use Node.js 24
+        node-version: ['26']  # Use Node.js 26
       # Don't cancel other matrix jobs if one fails
       fail-fast: false
     

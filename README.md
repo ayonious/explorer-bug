@@ -14,7 +14,6 @@ A simple game for exploring a 2D world with a bug.
 
 ## Run locally
 
-Use Node.js 26, then run:
 
 ```sh
 yarn install

@@ -15,19 +15,13 @@ jobs:
       contents: read
       pull-requests: write
     
-    strategy:
-      matrix:
-        node-version: ['26']  # Use Node.js 26
-      # Don't cancel other matrix jobs if one fails
-      fail-fast: false
-    
     steps:
       - uses: actions/checkout@v7.0.1
       
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js
         uses: actions/setup-node@v7.1.0
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version-file: .nvmrc
           cache: 'yarn'
       
       - name: Install dependencies

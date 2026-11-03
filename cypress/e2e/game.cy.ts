@@ -13,7 +13,7 @@ describe('Explorer Bug Game', () => {
     cy.contains('Left').should('be.visible')
     cy.contains('Right').should('be.visible')
     cy.contains('Go').should('be.visible')
-    
+
     // Check score display
     cy.contains('Scores:').should('be.visible')
   })
@@ -36,13 +36,13 @@ describe('Explorer Bug Game', () => {
   it('should have a visible game area with bug', () => {
     // Check if the game area is visible
     cy.get('div').should('be.visible')
-    
+
     // Check if the bug icon is present
-    cy.get('[data-testid="BugReportIcon"]').should('be.visible')
+    cy.get('[data-testid="bug-icon"]').should('be.visible')
   })
 
   it('should have score visible', () => {
     // Check if score is visible and is a number
     cy.contains(/Scores: \d+/).should('be.visible')
   })
-}) 
+})

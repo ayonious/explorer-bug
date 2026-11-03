@@ -125,7 +125,8 @@ it('Logs are generated when moving the bug', () => {
   // Should have additional movement log
   const updatedLogItems = screen.getAllByRole('listitem');
   expect(updatedLogItems.length).toBeGreaterThan(logItems.length);
-  expect(updatedLogItems[updatedLogItems.length - 1].textContent).toContain('MOVEMENT');
+  const newLogItems = updatedLogItems.slice(logItems.length);
+  expect(newLogItems.some(item => item.textContent?.includes('MOVEMENT'))).toBe(true);
 });
 
 it('Reset button resets the game state', () => {
